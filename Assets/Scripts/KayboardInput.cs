@@ -2,11 +2,11 @@
 using System.Collections;
 
 public class KayboardInput : MonoBehaviour {
-    private TargetScript moveObject;
+    private Selected moveObject;
 
     void Awake()
     {
-        moveObject = GameObject.Find("Handeler").GetComponent<TargetScript>();
+        moveObject = GameObject.Find("Handeler").GetComponent<Selected>();
     }
 
 	void Update()

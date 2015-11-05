@@ -6,16 +6,20 @@ public class EnemySpawner : MonoBehaviour {
     [SerializeField]
     private List<Transform> Spawners = new List<Transform>();
     [SerializeField]
-    private GameObject enemie;
+    private GameObject enemy;
+    [SerializeField]
+    private GameObject parrent;
 
-    private int spawnRate = 500;
+    private int spawnRate = 100;
 
     void Update()
     {
         if (Random.Range(0, spawnRate) == 1)
         {
             Vector2 randomTrans = new Vector2(Spawners[Random.Range(0, Spawners.Count)].position.x, Spawners[Random.Range(0, Spawners.Count)].position.y);
-            Instantiate(enemie, randomTrans, Quaternion.identity);
+
+            GameObject hostile = Instantiate(enemy, randomTrans, Quaternion.identity) as GameObject;
+            hostile.transform.parent = parrent.transform;
         }
     }
 }

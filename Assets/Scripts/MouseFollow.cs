@@ -9,7 +9,7 @@ public class MouseFollow : MonoBehaviour {
         Cursor.visible = false;
     }
 
-	void FixedUpdate () {
+	void Update () {
         mp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         gameObject.transform.position = mp;
