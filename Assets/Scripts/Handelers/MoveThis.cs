@@ -3,23 +3,23 @@ using System.Collections;
 
 public class MoveThis : MonoBehaviour {
 
-    private GridDrag gridScript;
+    private Selected selected;
     private SpriteRenderer SR;
     private float blink;
 
     void Awake()
     {
-        gridScript = GameObject.Find("Handeler").GetComponent<GridDrag>();
+        selected = GameObject.Find("Handeler").GetComponent<Selected>();
         SR = GetComponent<SpriteRenderer>();
     }
 
     //Needs fixing
     void Update()
     {
-        if (gridScript.MoveObject != null)
+        if (selected.Target != null)
         {
             SR.color = new Color(1f, 1f, 1f, 1f);
-            transform.position = new Vector3(gridScript.MoveObject.transform.position.x, gridScript.MoveObject.transform.position.y, 50);
+            transform.position = new Vector3(selected.Target.transform.position.x, selected.Target.transform.position.y, 5);
         }
         else SR.color = new Color(1f, 1f, 1f, 0f);
 

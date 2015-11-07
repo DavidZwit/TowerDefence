@@ -30,10 +30,20 @@ public class TowerScript : FriendlyBase{
         {
             for (int i = enemies.transform.childCount - 1; i >= 0; i-- )
             {
-                GameObject bullet = Instantiate(bullets, new Vector2(transform.position.x, transform.position.y + 400), Quaternion.identity) as GameObject;
-                bullet.transform.parent = transform;
+                //Transform enemy = enemies.transform.GetChild(i);
 
-                bullet.GetComponent<BulletScript>().Target = enemies.transform.GetChild(i);
+                //float theAngle;
+
+                GameObject bullet = Instantiate(bullets, 
+                    new Vector2(transform.position.x, 
+                        transform.position.y + 400), 
+                        Quaternion.identity) as GameObject;
+
+                //bullet.transform.rotation = theAngle;
+                
+
+                bullet.gameObject.transform.parent = transform;
+                
             }
         } 
     }

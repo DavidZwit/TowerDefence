@@ -25,10 +25,4 @@ public class GridDrag : MonoBehaviour {
 
         if (moveObject != null) moveObject.transform.position = pz;
     }
-
-    public GameObject MoveObject
-    {
-        set { moveObject = value;}
-        get { return moveObject; }
-    }
 }

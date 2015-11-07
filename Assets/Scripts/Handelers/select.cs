@@ -9,13 +9,13 @@ public class select : MonoBehaviour
 
     private bool inWave, selected;
     private GridDrag editMouse;
-    private Selected targetSetter;
+    private Selected selectSetter;
     private GameObject SelectTile;
 
     void Awake()
     {
         editMouse = GameObject.Find("Handeler").GetComponent<GridDrag>();
-        targetSetter = GameObject.Find("Handeler").GetComponent<Selected>();
+        selectSetter = GameObject.Find("Handeler").GetComponent<Selected>();
         SelectTile = GameObject.Find("SelectTile");
     }
 
@@ -23,15 +23,14 @@ public class select : MonoBehaviour
     {
         if (editMode)
         {
-            if (placed)
+            if (!selected)
             {
-                editMouse.MoveObject = gameObject; placed = false; selected = false;
-
-            }
-            else if (empty)
+               selectSetter.Target = gameObject; selected = true;
+               Work Here!!!
+            } 
+            else if (selected)
             {
-                targetSetter.Target = this.gameObject; selected = true;
-                editMouse.MoveObject = null; placed = true;
+                selectSetter.Target = null; selected = false;
             }
         }
     }

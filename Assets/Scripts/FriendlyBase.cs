@@ -18,13 +18,13 @@ public class FriendlyBase : MonoBehaviour {
 
     void OnEnable()
     {
-        ActivateBattle.StartBattle += StartBattle;
-        ActivateBattle.StopBattle += StopWave;
+        EventHandeler.StartBattle += StartBattle;
+        EventHandeler.StopBattle += StopWave;
     }
 
     void OnDiable()
     {
-        ActivateBattle.StartBattle -= StartBattle;
-        ActivateBattle.StopBattle -= StopWave;
+        EventHandeler.StartBattle -= StartBattle;
+        EventHandeler.StopBattle -= StopWave;
     }
 }
