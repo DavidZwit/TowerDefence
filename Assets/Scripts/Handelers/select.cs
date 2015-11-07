@@ -26,7 +26,6 @@ public class select : MonoBehaviour
             if (!selected)
             {
                selectSetter.Target = gameObject; selected = true;
-               Work Here!!!
             } 
             else if (selected)
             {
