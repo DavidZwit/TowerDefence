@@ -1,19 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TowerScript : FriendlyBase{
+public class TowerScript : FriendlyBase {
     [SerializeField]
     private GameObject bullets;
     private GameObject enemies;
 
-    public override void StartBattle()
+    protected override void Start()
+    {
+        base.Start();
+        health = 20;
+    }
+
+    protected override void StartBattle()
     {
         base.StartBattle();
 
         enemies = GameObject.Find("Enemies");
     }
 
-    public override void StopWave()
+    protected override void StopWave()
     {
         base.StopWave();
 
@@ -24,27 +30,25 @@ public class TowerScript : FriendlyBase{
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if (base.inBattle && Random.Range(0, 20) == 0)
+        //Shooting();
+    }
+
+    void Shooting()
+    {
+        if (inBattle && Random.Range(0, 20) == 0)
         {
-            for (int i = enemies.transform.childCount - 1; i >= 0; i-- )
+            for (int i = enemies.transform.childCount - 1; i >= 0; i--)
             {
-                //Transform enemy = enemies.transform.GetChild(i);
-
-                //float theAngle;
-
-                GameObject bullet = Instantiate(bullets, 
-                    new Vector2(transform.position.x, 
-                        transform.position.y + 400), 
+                GameObject bullet = Instantiate(bullets,
+                    new Vector2(transform.position.x,
+                        transform.position.y + 400),
                         Quaternion.identity) as GameObject;
 
-                //bullet.transform.rotation = theAngle;
-                
-
                 bullet.gameObject.transform.parent = transform;
-                
+
             }
-        } 
+        }
     }
 }

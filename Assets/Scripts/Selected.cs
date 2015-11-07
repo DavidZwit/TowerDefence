@@ -8,6 +8,6 @@ public class Selected : MonoBehaviour
     public GameObject Target
     {
         get { return target; }
-        set { target = value;  }
+        set { target = value;}
     }
 }

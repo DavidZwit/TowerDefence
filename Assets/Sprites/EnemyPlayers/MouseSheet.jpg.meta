@@ -1,0 +1,407 @@
+fileFormatVersion: 2
+guid: 6baf2025942c4984cbe1d5ae8d064b4d
+timeCreated: 1446904015
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MouseSheet_0
+    21300002: MouseSheet_1
+    21300004: MouseSheet_2
+    21300006: MouseSheet_3
+    21300008: MouseSheet_4
+    21300010: MouseSheet_5
+    21300012: MouseSheet_6
+    21300014: MouseSheet_7
+    21300016: MouseSheet_8
+    21300018: MouseSheet_9
+    21300020: MouseSheet_10
+    21300022: MouseSheet_11
+    21300024: MouseSheet_12
+    21300026: MouseSheet_13
+    21300028: MouseSheet_14
+    21300030: MouseSheet_15
+    21300032: MouseSheet_16
+    21300034: MouseSheet_17
+    21300036: MouseSheet_18
+    21300038: MouseSheet_19
+    21300040: MouseSheet_20
+    21300042: MouseSheet_21
+    21300044: MouseSheet_22
+    21300046: MouseSheet_23
+    21300048: MouseSheet_24
+    21300050: MouseSheet_25
+    21300052: MouseSheet_26
+    21300054: MouseSheet_27
+    21300056: MouseSheet_28
+    21300058: MouseSheet_29
+    21300060: MouseSheet_30
+    21300062: MouseSheet_31
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MouseSheet_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 448
+        width: 259
+        height: 186
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 451
+        width: 241
+        height: 176
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_2
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 451
+        width: 235
+        height: 172
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_3
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 448
+        width: 223
+        height: 168
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 448
+        width: 246
+        height: 163
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 448
+        width: 256
+        height: 160
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 451
+        width: 254
+        height: 170
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1987
+        y: 450
+        width: 243
+        height: 178
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_8
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 451
+        width: 236
+        height: 180
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_9
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 452
+        width: 247
+        height: 182
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 231
+        width: 233
+        height: 187
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_11
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 233
+        width: 231
+        height: 192
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_12
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 231
+        width: 218
+        height: 199
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_13
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 231
+        width: 207
+        height: 198
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 231
+        width: 223
+        height: 198
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 231
+        width: 215
+        height: 197
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 233
+        width: 228
+        height: 184
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 233
+        width: 212
+        height: 188
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_18
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 233
+        width: 221
+        height: 191
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_19
+      rect:
+        serializedVersion: 2
+        x: 2327
+        y: 233
+        width: 229
+        height: 186
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_20
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 10
+        width: 239
+        height: 192
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_21
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 10
+        width: 229
+        height: 190
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_22
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 8
+        width: 221
+        height: 197
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_23
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 10
+        width: 208
+        height: 197
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 12
+        width: 218
+        height: 199
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 10
+        width: 212
+        height: 194
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 10
+        width: 224
+        height: 190
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 159
+        width: 4
+        height: 17
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 10
+        width: 214
+        height: 187
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_29
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 10
+        width: 219
+        height: 194
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_30
+      rect:
+        serializedVersion: 2
+        x: 2328
+        y: 10
+        width: 228
+        height: 188
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MouseSheet_31
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 140
+        width: 5
+        height: 10
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

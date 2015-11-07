@@ -21,6 +21,8 @@ public class CreateObject : MonoBehaviour
             {
                 GameObject player = Instantiate(objectList[i], Vector3.zero, Quaternion.identity) as GameObject;
                 player.transform.parent = parrent.transform;
+
+                player.GetComponent<select>().Select();
             }
         }
     }
