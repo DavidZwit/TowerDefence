@@ -113,7 +113,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!1 &147417546
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +140,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &463674117
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,6 +367,7 @@ Transform:
   m_Children:
   - {fileID: 1212707197}
   - {fileID: 1289221334}
+  - {fileID: 816136317}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!114 &585613026
@@ -758,8 +759,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 585613025}
+  m_RootOrder: 2
 --- !u!1 &849445437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,7 +1483,8 @@ Prefab:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: c5333f5ee0477d64a9758fbf24291519, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1212707197 stripped
@@ -1518,7 +1520,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1261364226}
   m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106709}
-  m_LocalPosition: {x: 1699, y: -215, z: 0}
+  m_LocalPosition: {x: 1595, y: -215, z: 0}
   m_LocalScale: {x: .277194679, y: .277194858, z: .277194858}
   m_Children: []
   m_Father: {fileID: 1553390729}
@@ -1624,7 +1626,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1289221334}
   - 212: {fileID: 1289221333}
-  - 114: {fileID: 1289221332}
   m_Layer: 0
   m_Name: SelectTile
   m_TagString: Untagged
@@ -1632,18 +1633,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1289221332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11484024, guid: c5333f5ee0477d64a9758fbf24291519,
-    type: 2}
-  m_PrefabInternal: {fileID: 1180073195}
-  m_GameObject: {fileID: 1289221331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2d2e0a9bde0ced4fb006aafb29e2f27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1289221333
 SpriteRenderer:
   m_ObjectHideFlags: 0

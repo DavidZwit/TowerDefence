@@ -8,11 +8,13 @@ public class select : MonoBehaviour
     private bool inWave, selected;
     private GridDrag editMouse;
     private Selected selectSetter;
+    private GameObject selectTile;
 
     void Awake()
     {
         editMouse = GameObject.Find("Handeler").GetComponent<GridDrag>();
         selectSetter = GameObject.Find("Handeler").GetComponent<Selected>();
+        selectTile = GameObject.Find("SelectTile");
     }
 
     void OnMouseDown()
@@ -30,11 +32,18 @@ public class select : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (selected) selectTile.transform.position = transform.position;
+    }
+
     public void Select()
     {
         selectSetter.Target = gameObject;
         editMouse.MoveObject = gameObject;
         selected = true;
+
+        selectTile.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
     }
 
     public void deSelect()
@@ -42,6 +51,8 @@ public class select : MonoBehaviour
         selectSetter.Target = null;
         editMouse.MoveObject = null;
         selected = false;
+
+        selectTile.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
     }
 
     public bool EditMode

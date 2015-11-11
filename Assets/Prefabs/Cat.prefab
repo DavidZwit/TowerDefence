@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106090}
   m_LocalRotation: {x: .0087265363, y: 0, z: 0, w: .999961913}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -874.534912, y: -294.512451, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -72,6 +72,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9333380b142a266499b03432d9179d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
+  atackDamage: 25
+  atackRange: 200
+  power: 1
+  maxTargets: 1
+  atackSpeed: 2
+  damagePosOffset: {x: 0, y: 0, z: 0}
+  projectile: {fileID: 0}
+  moveSpeed: 20
+  lookRange: 500
+  lookSpeed: 1
 --- !u!114 &11440008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -131,6 +142,34 @@ Prefab:
         type: 3}
     - target: {fileID: 0}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: atackDamage
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: moveSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: atackRange
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: lookRange
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: lookSpeed
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
