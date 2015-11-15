@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 4a1dd1d34a9a8254897ac4493c922b8c
-timeCreated: 1447163339
+timeCreated: 1447418237
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -159,7 +159,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 2
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -187,7 +187,7 @@ TextureImporter:
         width: 239
         height: 191
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_1
       rect:
@@ -197,7 +197,7 @@ TextureImporter:
         width: 6
         height: 11
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_2
       rect:
@@ -207,7 +207,7 @@ TextureImporter:
         width: 229
         height: 190
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_3
       rect:
@@ -217,7 +217,7 @@ TextureImporter:
         width: 221
         height: 198
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_4
       rect:
@@ -227,7 +227,7 @@ TextureImporter:
         width: 208
         height: 197
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_5
       rect:
@@ -237,7 +237,7 @@ TextureImporter:
         width: 219
         height: 199
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_6
       rect:
@@ -247,7 +247,7 @@ TextureImporter:
         width: 208
         height: 194
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_7
       rect:
@@ -257,7 +257,7 @@ TextureImporter:
         width: 247
         height: 179
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_8
       rect:
@@ -267,7 +267,7 @@ TextureImporter:
         width: 248
         height: 172
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_9
       rect:
@@ -277,7 +277,7 @@ TextureImporter:
         width: 260
         height: 180
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_10
       rect:
@@ -287,7 +287,7 @@ TextureImporter:
         width: 248
         height: 179
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_11
       rect:
@@ -297,7 +297,7 @@ TextureImporter:
         width: 238
         height: 181
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_12
       rect:
@@ -307,7 +307,7 @@ TextureImporter:
         width: 236
         height: 178
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_13
       rect:
@@ -317,7 +317,7 @@ TextureImporter:
         width: 217
         height: 177
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_14
       rect:
@@ -327,7 +327,7 @@ TextureImporter:
         width: 242
         height: 177
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_15
       rect:
@@ -337,7 +337,7 @@ TextureImporter:
         width: 251
         height: 179
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_16
       rect:
@@ -347,7 +347,7 @@ TextureImporter:
         width: 257
         height: 186
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_17
       rect:
@@ -357,7 +357,7 @@ TextureImporter:
         width: 259
         height: 184
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_18
       rect:
@@ -367,7 +367,7 @@ TextureImporter:
         width: 250
         height: 180
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_19
       rect:
@@ -377,7 +377,7 @@ TextureImporter:
         width: 242
         height: 178
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_20
       rect:
@@ -387,7 +387,7 @@ TextureImporter:
         width: 215
         height: 177
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_21
       rect:
@@ -397,7 +397,7 @@ TextureImporter:
         width: 236
         height: 178
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_22
       rect:
@@ -407,7 +407,7 @@ TextureImporter:
         width: 238
         height: 182
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_23
       rect:
@@ -417,7 +417,7 @@ TextureImporter:
         width: 247
         height: 178
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_24
       rect:
@@ -427,7 +427,7 @@ TextureImporter:
         width: 259
         height: 180
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_25
       rect:
@@ -437,7 +437,7 @@ TextureImporter:
         width: 248
         height: 174
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_26
       rect:
@@ -447,7 +447,7 @@ TextureImporter:
         width: 247
         height: 180
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_27
       rect:
@@ -457,7 +457,7 @@ TextureImporter:
         width: 223
         height: 184
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_28
       rect:
@@ -467,7 +467,7 @@ TextureImporter:
         width: 229
         height: 180
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_29
       rect:
@@ -477,7 +477,7 @@ TextureImporter:
         width: 210
         height: 183
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_30
       rect:
@@ -487,7 +487,7 @@ TextureImporter:
         width: 220
         height: 183
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_31
       rect:
@@ -497,7 +497,7 @@ TextureImporter:
         width: 234
         height: 175
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_32
       rect:
@@ -507,7 +507,7 @@ TextureImporter:
         width: 241
         height: 167
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_33
       rect:
@@ -517,7 +517,7 @@ TextureImporter:
         width: 229
         height: 163
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_34
       rect:
@@ -527,7 +527,7 @@ TextureImporter:
         width: 209
         height: 155
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_35
       rect:
@@ -537,7 +537,7 @@ TextureImporter:
         width: 223
         height: 167
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_36
       rect:
@@ -547,7 +547,7 @@ TextureImporter:
         width: 226
         height: 184
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_37
       rect:
@@ -557,7 +557,7 @@ TextureImporter:
         width: 227
         height: 183
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_38
       rect:
@@ -567,7 +567,7 @@ TextureImporter:
         width: 230
         height: 182
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_39
       rect:
@@ -577,7 +577,7 @@ TextureImporter:
         width: 219
         height: 182
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_40
       rect:
@@ -587,7 +587,7 @@ TextureImporter:
         width: 222
         height: 186
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_41
       rect:
@@ -597,7 +597,7 @@ TextureImporter:
         width: 227
         height: 172
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_42
       rect:
@@ -607,7 +607,7 @@ TextureImporter:
         width: 241
         height: 167
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_43
       rect:
@@ -617,7 +617,7 @@ TextureImporter:
         width: 229
         height: 163
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_44
       rect:
@@ -627,7 +627,7 @@ TextureImporter:
         width: 216
         height: 155
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_45
       rect:
@@ -637,7 +637,7 @@ TextureImporter:
         width: 218
         height: 168
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_46
       rect:
@@ -647,7 +647,7 @@ TextureImporter:
         width: 228
         height: 184
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_47
       rect:
@@ -657,7 +657,7 @@ TextureImporter:
         width: 239
         height: 177
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_48
       rect:
@@ -667,7 +667,7 @@ TextureImporter:
         width: 239
         height: 178
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_49
       rect:
@@ -677,7 +677,7 @@ TextureImporter:
         width: 244
         height: 189
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_50
       rect:
@@ -687,7 +687,7 @@ TextureImporter:
         width: 251
         height: 188
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_51
       rect:
@@ -697,7 +697,7 @@ TextureImporter:
         width: 256
         height: 187
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_52
       rect:
@@ -707,18 +707,18 @@ TextureImporter:
         width: 249
         height: 184
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_53
       rect:
         serializedVersion: 2
-        x: 1627
+        x: 1683
         y: 1630
-        width: 313
+        width: 257
         height: 187
       alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: .5, y: 0}
+      border: {x: 4, y: 0, z: 0, w: 0}
     - name: enemycollection_54
       rect:
         serializedVersion: 2
@@ -727,7 +727,7 @@ TextureImporter:
         width: 253
         height: 195
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_55
       rect:
@@ -737,7 +737,7 @@ TextureImporter:
         width: 249
         height: 183
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_56
       rect:
@@ -747,7 +747,7 @@ TextureImporter:
         width: 10
         height: 5
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_57
       rect:
@@ -757,7 +757,7 @@ TextureImporter:
         width: 10
         height: 9
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_58
       rect:
@@ -767,7 +767,7 @@ TextureImporter:
         width: 11
         height: 5
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_59
       rect:
@@ -777,7 +777,7 @@ TextureImporter:
         width: 250
         height: 183
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_60
       rect:
@@ -787,17 +787,17 @@ TextureImporter:
         width: 254
         height: 194
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_61
       rect:
         serializedVersion: 2
         x: 578
         y: 1398
-        width: 313
+        width: 259
         height: 187
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_62
       rect:
@@ -807,7 +807,7 @@ TextureImporter:
         width: 248
         height: 184
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_63
       rect:
@@ -817,7 +817,7 @@ TextureImporter:
         width: 256
         height: 187
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_64
       rect:
@@ -827,7 +827,7 @@ TextureImporter:
         width: 251
         height: 187
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_65
       rect:
@@ -837,7 +837,7 @@ TextureImporter:
         width: 243
         height: 188
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_66
       rect:
@@ -847,7 +847,7 @@ TextureImporter:
         width: 238
         height: 177
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_67
       rect:
@@ -857,7 +857,7 @@ TextureImporter:
         width: 238
         height: 176
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_68
       rect:
@@ -867,7 +867,7 @@ TextureImporter:
         width: 9
         height: 9
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_69
       rect:
@@ -877,7 +877,7 @@ TextureImporter:
         width: 221
         height: 189
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_70
       rect:
@@ -887,7 +887,7 @@ TextureImporter:
         width: 217
         height: 190
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_71
       rect:
@@ -897,7 +897,7 @@ TextureImporter:
         width: 210
         height: 189
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_72
       rect:
@@ -907,7 +907,7 @@ TextureImporter:
         width: 210
         height: 201
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_73
       rect:
@@ -917,7 +917,7 @@ TextureImporter:
         width: 210
         height: 196
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_74
       rect:
@@ -927,7 +927,7 @@ TextureImporter:
         width: 205
         height: 195
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_75
       rect:
@@ -937,7 +937,7 @@ TextureImporter:
         width: 201
         height: 193
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_76
       rect:
@@ -947,7 +947,7 @@ TextureImporter:
         width: 213
         height: 188
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_77
       rect:
@@ -957,7 +957,7 @@ TextureImporter:
         width: 218
         height: 181
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_78
       rect:
@@ -967,7 +967,7 @@ TextureImporter:
         width: 223
         height: 179
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_79
       rect:
@@ -977,7 +977,7 @@ TextureImporter:
         width: 235
         height: 193
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_80
       rect:
@@ -987,7 +987,7 @@ TextureImporter:
         width: 218
         height: 190
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_81
       rect:
@@ -997,7 +997,7 @@ TextureImporter:
         width: 213
         height: 192
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_82
       rect:
@@ -1007,7 +1007,7 @@ TextureImporter:
         width: 212
         height: 200
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_83
       rect:
@@ -1017,7 +1017,7 @@ TextureImporter:
         width: 209
         height: 190
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_84
       rect:
@@ -1027,7 +1027,7 @@ TextureImporter:
         width: 208
         height: 194
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_85
       rect:
@@ -1037,7 +1037,7 @@ TextureImporter:
         width: 208
         height: 197
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_86
       rect:
@@ -1047,7 +1047,7 @@ TextureImporter:
         width: 219
         height: 184
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_87
       rect:
@@ -1057,7 +1057,7 @@ TextureImporter:
         width: 222
         height: 181
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_88
       rect:
@@ -1067,7 +1067,7 @@ TextureImporter:
         width: 231
         height: 181
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_89
       rect:
@@ -1077,7 +1077,7 @@ TextureImporter:
         width: 246
         height: 181
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_90
       rect:
@@ -1087,7 +1087,7 @@ TextureImporter:
         width: 237
         height: 181
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_91
       rect:
@@ -1097,7 +1097,7 @@ TextureImporter:
         width: 243
         height: 180
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_92
       rect:
@@ -1107,7 +1107,7 @@ TextureImporter:
         width: 254
         height: 170
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_93
       rect:
@@ -1117,7 +1117,7 @@ TextureImporter:
         width: 257
         height: 161
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_94
       rect:
@@ -1127,7 +1127,7 @@ TextureImporter:
         width: 247
         height: 162
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_95
       rect:
@@ -1137,7 +1137,7 @@ TextureImporter:
         width: 224
         height: 167
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_96
       rect:
@@ -1147,7 +1147,7 @@ TextureImporter:
         width: 236
         height: 172
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_97
       rect:
@@ -1157,7 +1157,7 @@ TextureImporter:
         width: 241
         height: 176
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_98
       rect:
@@ -1167,7 +1167,7 @@ TextureImporter:
         width: 259
         height: 185
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_99
       rect:
@@ -1177,7 +1177,7 @@ TextureImporter:
         width: 259
         height: 185
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_100
       rect:
@@ -1187,7 +1187,7 @@ TextureImporter:
         width: 241
         height: 176
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_101
       rect:
@@ -1197,7 +1197,7 @@ TextureImporter:
         width: 235
         height: 172
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_102
       rect:
@@ -1207,7 +1207,7 @@ TextureImporter:
         width: 224
         height: 168
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_103
       rect:
@@ -1217,7 +1217,7 @@ TextureImporter:
         width: 247
         height: 163
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_104
       rect:
@@ -1227,7 +1227,7 @@ TextureImporter:
         width: 256
         height: 161
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_105
       rect:
@@ -1237,7 +1237,7 @@ TextureImporter:
         width: 254
         height: 170
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_106
       rect:
@@ -1247,7 +1247,7 @@ TextureImporter:
         width: 242
         height: 180
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_107
       rect:
@@ -1257,7 +1257,7 @@ TextureImporter:
         width: 237
         height: 181
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_108
       rect:
@@ -1267,7 +1267,7 @@ TextureImporter:
         width: 246
         height: 181
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_109
       rect:
@@ -1277,7 +1277,7 @@ TextureImporter:
         width: 234
         height: 187
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_110
       rect:
@@ -1287,7 +1287,7 @@ TextureImporter:
         width: 232
         height: 193
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_111
       rect:
@@ -1297,7 +1297,7 @@ TextureImporter:
         width: 218
         height: 200
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_112
       rect:
@@ -1307,7 +1307,7 @@ TextureImporter:
         width: 207
         height: 198
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_113
       rect:
@@ -1317,7 +1317,7 @@ TextureImporter:
         width: 223
         height: 198
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_114
       rect:
@@ -1327,7 +1327,7 @@ TextureImporter:
         width: 216
         height: 197
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_115
       rect:
@@ -1337,7 +1337,7 @@ TextureImporter:
         width: 227
         height: 184
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_116
       rect:
@@ -1347,7 +1347,7 @@ TextureImporter:
         width: 212
         height: 187
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_117
       rect:
@@ -1357,7 +1357,7 @@ TextureImporter:
         width: 221
         height: 191
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_118
       rect:
@@ -1367,7 +1367,7 @@ TextureImporter:
         width: 230
         height: 186
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_119
       rect:
@@ -1377,7 +1377,7 @@ TextureImporter:
         width: 240
         height: 191
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_120
       rect:
@@ -1387,7 +1387,7 @@ TextureImporter:
         width: 6
         height: 11
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_121
       rect:
@@ -1397,7 +1397,7 @@ TextureImporter:
         width: 229
         height: 190
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_122
       rect:
@@ -1407,7 +1407,7 @@ TextureImporter:
         width: 221
         height: 197
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_123
       rect:
@@ -1417,7 +1417,7 @@ TextureImporter:
         width: 208
         height: 197
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_124
       rect:
@@ -1427,7 +1427,7 @@ TextureImporter:
         width: 220
         height: 198
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_125
       rect:
@@ -1437,7 +1437,7 @@ TextureImporter:
         width: 212
         height: 195
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_126
       rect:
@@ -1447,7 +1447,7 @@ TextureImporter:
         width: 226
         height: 190
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_127
       rect:
@@ -1457,7 +1457,7 @@ TextureImporter:
         width: 213
         height: 187
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_128
       rect:
@@ -1467,7 +1467,7 @@ TextureImporter:
         width: 220
         height: 194
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemycollection_129
       rect:
@@ -1477,7 +1477,7 @@ TextureImporter:
         width: 228
         height: 188
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

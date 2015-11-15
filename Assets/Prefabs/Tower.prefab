@@ -100,15 +100,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e4d2330c1ed8343836ac3de859cd1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1000
-  atackDamage: 100
-  atackRange: 500
   power: 1
+  health: 1000
   maxTargets: 1000
+  atackDamage: 100
   atackSpeed: 2
+  atackRange: 500
   damagePosOffset: {x: 0, y: 0, z: 0}
   projectile: {fileID: 0}
-  bullets: {fileID: 110330, guid: 96660a69ac4991e46b16b2b489729a2c, type: 2}
 --- !u!114 &11461042
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -2,8 +2,6 @@
 using System.Collections;
 
 public class TurretBase : Humanoid {
-    [SerializeField]
-    private GameObject bullets;
 
     protected void Start()
     {
@@ -13,7 +11,6 @@ public class TurretBase : Humanoid {
         maxTargets = 3;
         atackDamage = 10;
         atackRange = 1000;
-        projectile = bullets;
         damagePosOffset = new Vector3(0, 300, 0);
     }
     

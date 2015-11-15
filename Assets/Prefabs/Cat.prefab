@@ -73,13 +73,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  atackDamage: 25
-  atackRange: 200
-  power: 1
   maxTargets: 1
-  atackSpeed: 2
+  atackDamage: 25
+  atackSpeed: 1
+  atackRange: 200
   damagePosOffset: {x: 0, y: 0, z: 0}
   projectile: {fileID: 0}
+  targets: []
   moveSpeed: 20
   lookRange: 500
   lookSpeed: 1
@@ -170,6 +170,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: lookSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: atackSpeed
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

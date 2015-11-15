@@ -21,14 +21,13 @@ public class select : MonoBehaviour
     {
         if (editMode)
         {
-            if (!selected)
-            {
+            if (!selected) {
                 Select();
-            } 
-            else if (selected)
-            {
+            } else if (selected) {
                 deSelect();
             }
+        } else if (!editMode) {
+
         }
     }
 

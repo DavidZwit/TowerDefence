@@ -3,39 +3,49 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Humanoid : MonoBehaviour {
-    [SerializeField] protected int health = 5;
-    [SerializeField] protected int atackDamage = 5;
-    [SerializeField] protected int atackRange = 500;
-    [SerializeField] protected int power = 1;
-    [SerializeField] protected int maxTargets = 1;
+    [SerializeField] protected int health = 5;//The health of the object
+    [SerializeField] protected int maxTargets = 1;//The amound of targets that can be attacked at once
+    [SerializeField] protected int atackDamage = 5;//The dammage the attacks do
+    [SerializeField] protected float atackSpeed = 2;//The speed the target can attacxk
+    [SerializeField] protected int atackRange = 500;//Range object can atack from
+    [SerializeField] protected Vector3 damagePosOffset;//The offset form the piffit point the damage is given
+    [SerializeField] protected GameObject projectile = null;//Projectile
+    protected int power = 1;//The power, is to determen how strong the object is for sorting
+    protected bool attacking;//Says if object is atacking
+    protected float nextFire;//fire rate handeler
+    protected string targetTag;//The tag of the target to atack
+    protected Animator animator;//Gets the animator object
+    [SerializeField] protected GameObject[] targets;//The targets to atack
     protected bool inBattle, isFriendly;
-    [SerializeField] protected float atackSpeed = 2;
-    protected float nextFire;
-    protected string targetTag;
-    [SerializeField] protected Vector3 damagePosOffset;
-    [SerializeField] protected GameObject projectile = null;
-    protected GameObject[] targets;
+    protected int attackingHash = Animator.StringToHash("attacking");
 
     protected void Awake()
     {
         if (gameObject.tag == "Enemy") { isFriendly = false; targetTag = "Friendly"; inBattle = true; }
         else if (gameObject.tag == "Friendly"){ isFriendly = true; targetTag = "Enemy";}
+        if (GetComponent<Animator>() != null) animator = GetComponent<Animator>();
     }
 
     protected void Atack()
     {
-        if (Time.time > nextFire) { 
+        if (Time.time > nextFire)
+        {
             targets = CheckTargets(atackRange);
-
-            foreach (GameObject target in targets)
-            {
-                if (projectile != null) {
-                    GameObject bullet = Instantiate(projectile, transform.position+damagePosOffset, Quaternion.identity) as GameObject;
-                    bullet.GetComponent<BulletBase>().Target = target.transform.position;
-                    bullet.transform.parent = transform;
-                } else if (target != null) {
-                    target.SendMessage("ApplyDamage", atackDamage);
+            if (targets.Length > 0) {
+                foreach (GameObject target in targets)
+                {
+                    attacking = true;  SetRotationPos(target.transform.position, "attackPos");
+                    if (projectile != null) {
+                        GameObject bullet = Instantiate(projectile, transform.position + damagePosOffset, Quaternion.identity) as GameObject;
+                        bullet.GetComponent<BulletBase>().Target = target.transform.position;
+                        bullet.transform.parent = transform;
+                    } else {
+                        target.SendMessage("ApplyDamage", atackDamage);
+                        if (animator != null) animator.SetBool(attackingHash, attacking);
+                    }
                 }
+            } else if (animator != null) {
+                attacking = false; animator.SetBool(attackingHash, attacking);
             }
             nextFire = Time.time + atackSpeed;
         }
@@ -49,6 +59,29 @@ public class Humanoid : MonoBehaviour {
                 targets.Add(coll.gameObject);
             }
         } return targets.ToArray();
+    }
+
+    protected void SetRotationPos(Vector2 target, string setInteger)
+    {
+        //setting the variable for the animations to work.
+        if (animator != null)
+        {
+            float rotation = calculateAngle(transform.position, target);
+            int result;
+
+            if (rotation > 225 && rotation < 315) result = 1;
+            else if (rotation > 135 && rotation < 225) result = 2;
+            else if (rotation > 45 && rotation < 135) result = 3;
+            else if (rotation > 315 || rotation < 45) result = 4;
+            else result = 0;
+
+            animator.SetInteger(setInteger, result);
+        }
+    }
+
+    protected float calculateAngle(Vector2 from, Vector2 to)
+    {
+        return (Mathf.Atan2(to.y - from.y, to.x - from.x) * 180 / Mathf.PI) + 180;
     }
 
     void ApplyDamage(int damage)
