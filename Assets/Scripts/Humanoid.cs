@@ -10,12 +10,13 @@ public class Humanoid : MonoBehaviour {
     [SerializeField] protected int atackRange = 500;//Range object can atack from
     [SerializeField] protected Vector3 damagePosOffset;//The offset form the piffit point the damage is given
     [SerializeField] protected GameObject projectile = null;//Projectile
-    protected int power = 1;//The power, is to determen how strong the object is for sorting
+    protected int power;//The power, is to determen how strong the object is for sorting
     protected bool attacking;//Says if object is atacking
     protected float nextFire;//fire rate handeler
     protected string targetTag;//The tag of the target to atack
     protected Animator animator;//Gets the animator object
     [SerializeField] protected GameObject[] targets;//The targets to atack
+    protected SpriteRenderer renderer;
     protected bool inBattle, isFriendly;
     protected int attackingHash = Animator.StringToHash("attacking");
 
@@ -24,6 +25,7 @@ public class Humanoid : MonoBehaviour {
         if (gameObject.tag == "Enemy") { isFriendly = false; targetTag = "Friendly"; inBattle = true; }
         else if (gameObject.tag == "Friendly"){ isFriendly = true; targetTag = "Enemy";}
         if (GetComponent<Animator>() != null) animator = GetComponent<Animator>();
+        renderer = GetComponent<SpriteRenderer>();
     }
 
     protected void Atack()
@@ -32,20 +34,33 @@ public class Humanoid : MonoBehaviour {
         {
             targets = CheckTargets(atackRange);
             if (targets.Length > 0) {
-                foreach (GameObject target in targets)
+                int checkLength;
+                if (targets.Length > maxTargets) checkLength = maxTargets;
+                else checkLength = targets.Length;
+                //foreach (GameObject target in targets)
+                for (var i = checkLength - 1; i >= 0; i-- )
                 {
-                    attacking = true;  SetRotationPos(target.transform.position, "attackPos");
-                    if (projectile != null) {
+                    renderer.color = new Color(1f, 0f, 1f);
+                    Invoke("resetColor", 0.01f);
+                    attacking = true;  SetRotationPos(targets[i].transform.position, "attackPos");
+                    if (projectile != null)
+                    {
                         GameObject bullet = Instantiate(projectile, transform.position + damagePosOffset, Quaternion.identity) as GameObject;
-                        bullet.GetComponent<BulletBase>().Target = target.transform.position;
+                        bullet.GetComponent<BulletBase>().Target = targets[i].transform.position;
                         bullet.transform.parent = transform;
-                    } else {
-                        target.SendMessage("ApplyDamage", atackDamage);
+                    }
+                    else
+                    {
+                        targets[i].SendMessage("ApplyDamage", atackDamage);
                         if (animator != null) animator.SetBool(attackingHash, attacking);
                     }
                 }
-            } else if (animator != null) {
-                attacking = false; animator.SetBool(attackingHash, attacking);
+            }
+            else {
+                attacking = false;
+                if (animator != null) {
+                    animator.SetBool(attackingHash, attacking);
+                }
             }
             nextFire = Time.time + atackSpeed;
         }
@@ -53,6 +68,8 @@ public class Humanoid : MonoBehaviour {
 
     protected GameObject[] CheckTargets(int range)
     {
+        renderer.color = new Color(0f, 1f, 1f);
+        Invoke("resetColor", 0.2f);
         List<GameObject> targets = new List<GameObject>();
         foreach (Collider2D coll in Physics2D.OverlapCircleAll(transform.position, range)){
             if (coll.gameObject.tag == targetTag){
@@ -82,6 +99,11 @@ public class Humanoid : MonoBehaviour {
     protected float calculateAngle(Vector2 from, Vector2 to)
     {
         return (Mathf.Atan2(to.y - from.y, to.x - from.x) * 180 / Mathf.PI) + 180;
+    }
+
+    protected void resetColor()
+    {
+        renderer.color = new Color(1f, 1f, 1f, 1f);
     }
 
     void ApplyDamage(int damage)

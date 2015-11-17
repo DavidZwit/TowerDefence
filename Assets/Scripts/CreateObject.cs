@@ -7,10 +7,12 @@ public class CreateObject : MonoBehaviour
     [SerializeField]
     private List<GameObject> objectList = new List<GameObject>();
     private GameObject parrent;
+    private Resources resources;
 
     void Awake()
     {
         parrent = GameObject.Find("Players");
+        resources = GameObject.Find("Handeler").GetComponent<Resources>();
     }
 
     public void ObjectCreateString(string objectName)

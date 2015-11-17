@@ -19,7 +19,7 @@ public class EnemySpawner : MonoBehaviour {
             Vector2 randomTrans = new Vector2(Spawners[Random.Range(0, Spawners.Count)].position.x, Spawners[Random.Range(0, Spawners.Count)].position.y);
 
             GameObject hostile = Instantiate(enemy, randomTrans, Quaternion.identity) as GameObject;
-            hostile.transform.SetParent(transform);
+            hostile.transform.SetParent(parrent.transform);
         }
     }
 }

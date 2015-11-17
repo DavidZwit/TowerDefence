@@ -27,7 +27,16 @@ public class select : MonoBehaviour
                 deSelect();
             }
         } else if (!editMode) {
-
+            if (!selected)
+            {
+                selectSetter.Target = gameObject;
+                selected = true;
+            }
+            else if (selected)
+            {
+                selectSetter.Target = null;
+                selected = false;
+            }
         }
     }
 
