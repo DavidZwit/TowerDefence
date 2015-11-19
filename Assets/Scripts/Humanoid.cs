@@ -18,7 +18,6 @@ public class Humanoid : MonoBehaviour {
     [SerializeField] protected GameObject[] targets;//The targets to atack
     protected SpriteRenderer renderer;
     protected bool inBattle, isFriendly;
-    protected int attackingHash = Animator.StringToHash("attacking");
 
     protected void Awake()
     {
@@ -43,15 +42,12 @@ public class Humanoid : MonoBehaviour {
                     renderer.color = new Color(1f, 0f, 1f);
                     Invoke("resetColor", 0.01f);
                     attacking = true;  SetRotationPos(targets[i].transform.position, "attackPos");
-                    if (projectile != null)
-                    {
+                    if (projectile != null) {
                         GameObject bullet = Instantiate(projectile, transform.position + damagePosOffset, Quaternion.identity) as GameObject;
                         bullet.GetComponent<BulletBase>().Target = targets[i].transform.position;
                         bullet.transform.parent = transform;
-                    }
-                    else
-                    {
-                        targets[i].SendMessage("ApplyDamage", atackDamage);
+                    } else {
+                        targets[i].SendMessage("ApplyDamage", atackDamage, SendMessageOptions.DontRequireReceiver);
                         moving = false;  animator.SetBool("walking", moving);
                     }
                     if (animator != null) animator.SetTrigger("attacking");
@@ -60,8 +56,7 @@ public class Humanoid : MonoBehaviour {
             else {
                 attacking = false;
                 if (animator != null) {
-                    animator.SetBool(attackingHash, attacking);
-                    moving = true;  animator.SetBool("walking", moving);
+                    moving = true;  if (!isFriendly) animator.SetBool("walking", moving);
                 }
             }
             nextFire = Time.time + atackSpeed;
