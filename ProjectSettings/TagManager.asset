@@ -8,6 +8,7 @@ TagManager:
   - Mouse
   - Enemy
   - Bullet
+  - Map
   layers:
   - Default
   - TransparentFX

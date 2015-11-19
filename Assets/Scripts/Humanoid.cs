@@ -11,7 +11,7 @@ public class Humanoid : MonoBehaviour {
     [SerializeField] protected Vector3 damagePosOffset;//The offset form the piffit point the damage is given
     [SerializeField] protected GameObject projectile = null;//Projectile
     protected int power;//The power, is to determen how strong the object is for sorting
-    protected bool attacking;//Says if object is atacking
+    protected bool attacking, moving;//Says if object is atacking
     protected float nextFire;//fire rate handeler
     protected string targetTag;//The tag of the target to atack
     protected Animator animator;//Gets the animator object
@@ -52,14 +52,16 @@ public class Humanoid : MonoBehaviour {
                     else
                     {
                         targets[i].SendMessage("ApplyDamage", atackDamage);
-                        if (animator != null) animator.SetBool(attackingHash, attacking);
+                        moving = false;  animator.SetBool("walking", moving);
                     }
+                    if (animator != null) animator.SetTrigger("attacking");
                 }
             }
             else {
                 attacking = false;
                 if (animator != null) {
                     animator.SetBool(attackingHash, attacking);
+                    moving = true;  animator.SetBool("walking", moving);
                 }
             }
             nextFire = Time.time + atackSpeed;

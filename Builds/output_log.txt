@@ -1,2 +1,0 @@
-There should be 'FirstBuild_Data'
-folder next to the executable

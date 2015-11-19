@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: d0d9eec6d58153c4b8b9765f4f0e35e6
+timeCreated: 1447942441
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: side_shoot_0
+    21300002: side_shoot_1
+    21300004: side_shoot_2
+    21300006: side_shoot_3
+    21300008: side_shoot_4
+    21300010: side_shoot_5
+    21300012: side_shoot_6
+    21300014: side_shoot_7
+    21300016: side_shoot_8
+    21300018: side_shoot_9
+    21300020: side_shoot_10
+    21300022: side_shoot_11
+    21300024: side_shoot_12
+    21300026: side_shoot_13
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: side_shoot_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1572
+        width: 206
+        height: 412
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: side_shoot_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1572
+        width: 237
+        height: 405
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: side_shoot_2
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1572
+        width: 258
+        height: 400
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: side_shoot_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1572
+        width: 284
+        height: 393
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: side_shoot_4
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 1572
+        width: 301
+        height: 385
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: side_shoot_5
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1572
+        width: 296
+        height: 392
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: side_shoot_6
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1048
+        width: 284
+        height: 396
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: side_shoot_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1048
+        width: 274
+        height: 400
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: side_shoot_8
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1048
+        width: 260
+        height: 409
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: side_shoot_9
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 1048
+        width: 244
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: side_shoot_10
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 1048
+        width: 227
+        height: 421
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: side_shoot_11
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 1048
+        width: 232
+        height: 420
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: side_shoot_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 526
+        width: 233
+        height: 416
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: side_shoot_13
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 526
+        width: 238
+        height: 411
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
