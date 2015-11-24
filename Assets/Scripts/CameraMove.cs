@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CameraScript : MonoBehaviour
-{
+public class CameraMove : MonoBehaviour {
 
-    float minZoomDistance;
+    float minZoomDistance = 10;
     float maxZoomDistance;
 
     Vector3 velocity = new Vector3(0, 0, 0);
@@ -13,12 +12,10 @@ public class CameraScript : MonoBehaviour
 
     Vector2 cameraSize = new Vector2(0, 0);
 
-    [SerializeField]
     public Transform map;
-    [SerializeField]
     public Camera mainCamera;
 
-    float getMaxCameraSize(Vector2 resolution)
+    float getMaxCameraSize ( Vector2 resolution )
     {
         float smallestRatio = Mathf.Min(
             Mathf.Abs((resolution.x - 10) / mainCamera.aspect),
@@ -29,28 +26,32 @@ public class CameraScript : MonoBehaviour
     }
 
     // Use this for initialization
-    void Start()
-    {
-        cameraSize.y = Screen.height;
-        cameraSize.x = Screen.width;
+    void Start () {
+        mainCamera = Camera.main;
 
-        maxZoomDistance = getMaxCameraSize(map.transform.localScale);
-        minZoomDistance = getMaxCameraSize(cameraSize);
-
-        Camera.main.orthographicSize = maxZoomDistance;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         cameraSize.y = 2f * mainCamera.orthographicSize;
         cameraSize.x = cameraSize.y * mainCamera.aspect;
 
+        maxZoomDistance = getMaxCameraSize(map.transform.localScale);
+        minZoomDistance = getMaxCameraSize(new Vector2(Screen.width, Screen.height));
+
+        mainCamera.orthographicSize = maxZoomDistance;
+    }
+	
+	// Update is called once per frame
+    void FixedUpdate ()
+    {
+
+        maxZoomDistance = getMaxCameraSize(map.transform.localScale);
+        minZoomDistance = getMaxCameraSize(new Vector2(Screen.width, Screen.height));
+    }
+	void Update ()
+    {
+        mainCamera.transform.localScale = cameraSize;
 
         mouseDelta.x = Input.GetAxis("Mouse X") * 4;
         mouseDelta.y = Input.GetAxis("Mouse Y") * 4;
         velocity.z -= Input.mouseScrollDelta.y * 4;
-
 
         if (Input.GetMouseButton(0) && (mouseDelta.sqrMagnitude > 0 || dragging))
         {
@@ -59,14 +60,24 @@ public class CameraScript : MonoBehaviour
         }
         else dragging = false;
 
-        
         transform.position += new Vector3(velocity.x, velocity.y, 0);
 
+        velocity -= velocity / 10;
 
-        if (Camera.main.orthographicSize > maxZoomDistance)
-            Camera.main.orthographicSize = maxZoomDistance;
-        if (Camera.main.orthographicSize < minZoomDistance)
-            Camera.main.orthographicSize = minZoomDistance;
+
+        mainCamera.orthographicSize += velocity.z;
+
+        cameraSize.y = 2f * mainCamera.orthographicSize;
+        cameraSize.x = cameraSize.y * mainCamera.aspect;
+
+        if (mainCamera.orthographicSize > maxZoomDistance) {
+            mainCamera.orthographicSize = maxZoomDistance;
+            velocity.z = 0;
+        }
+        if (mainCamera.orthographicSize < minZoomDistance) {
+            mainCamera.orthographicSize = minZoomDistance;
+            velocity.z = 0;
+        }
 
         if (transform.position.x - cameraSize.x / 2 < map.position.x - map.localScale.x / 2)
             transform.position = new Vector2(map.position.x - map.localScale.x / 2 + cameraSize.x / 2, transform.position.y);
@@ -82,7 +93,5 @@ public class CameraScript : MonoBehaviour
 
 
 
-        Camera.main.orthographicSize += velocity.z;
-        velocity -= velocity / 10;
     }
 }
