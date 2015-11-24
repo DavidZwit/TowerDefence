@@ -11,14 +11,13 @@ public class Humanoid : MonoBehaviour {
     [SerializeField] protected Vector3 damagePosOffset;//The offset form the piffit point the damage is given
     [SerializeField] protected GameObject projectile = null;//Projectile
     protected int power;//The power, is to determen how strong the object is for sorting
-    protected bool attacking;//Says if object is atacking
+    protected bool attacking, moving;//Says if object is atacking
     protected float nextFire;//fire rate handeler
     protected string targetTag;//The tag of the target to atack
     protected Animator animator;//Gets the animator object
     [SerializeField] protected GameObject[] targets;//The targets to atack
     protected SpriteRenderer renderer;
     protected bool inBattle, isFriendly;
-    protected int attackingHash = Animator.StringToHash("attacking");
 
     protected void Awake()
     {
@@ -43,23 +42,21 @@ public class Humanoid : MonoBehaviour {
                     renderer.color = new Color(1f, 0f, 1f);
                     Invoke("resetColor", 0.01f);
                     attacking = true;  SetRotationPos(targets[i].transform.position, "attackPos");
-                    if (projectile != null)
-                    {
+                    if (projectile != null) {
                         GameObject bullet = Instantiate(projectile, transform.position + damagePosOffset, Quaternion.identity) as GameObject;
                         bullet.GetComponent<BulletBase>().Target = targets[i].transform.position;
                         bullet.transform.parent = transform;
+                    } else {
+                        targets[i].SendMessage("ApplyDamage", atackDamage, SendMessageOptions.DontRequireReceiver);
+                        moving = false;  animator.SetBool("walking", moving);
                     }
-                    else
-                    {
-                        targets[i].SendMessage("ApplyDamage", atackDamage);
-                        if (animator != null) animator.SetBool(attackingHash, attacking);
-                    }
+                    if (animator != null) animator.SetTrigger("attacking");
                 }
             }
             else {
                 attacking = false;
                 if (animator != null) {
-                    animator.SetBool(attackingHash, attacking);
+                    moving = true;  if (!isFriendly) animator.SetBool("walking", moving);
                 }
             }
             nextFire = Time.time + atackSpeed;

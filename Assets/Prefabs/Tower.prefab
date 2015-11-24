@@ -28,6 +28,7 @@ GameObject:
   - 61: {fileID: 6140094}
   - 114: {fileID: 11461042}
   - 114: {fileID: 11460896}
+  - 95: {fileID: 9540788}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Friendly
@@ -42,8 +43,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.00000048, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -124.379997, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 469976}
   m_Father: {fileID: 0}
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106654}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 336, z: 0}
+  m_LocalPosition: {x: -19, y: 216, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 405328}
@@ -89,6 +90,23 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 128, y: 128}
+--- !u!95 &9540788
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152002}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2752bbad1d2e45f4bb194dd39933cf66, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11460896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -100,14 +118,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e4d2330c1ed8343836ac3de859cd1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 1
   health: 1000
   maxTargets: 1000
   atackDamage: 100
   atackSpeed: 2
   atackRange: 500
   damagePosOffset: {x: 0, y: 0, z: 0}
-  projectile: {fileID: 0}
+  projectile: {fileID: 110330, guid: 96660a69ac4991e46b16b2b489729a2c, type: 2}
+  targets: []
 --- !u!114 &11461042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -143,7 +161,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: af6f85373763e3347abba8bab10f00fc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb576f3fa4b68004a8c18a3d13ea95aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
@@ -185,6 +203,10 @@ Prefab:
       propertyPath: maxTargets
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 110330, guid: 96660a69ac4991e46b16b2b489729a2c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 152002}
