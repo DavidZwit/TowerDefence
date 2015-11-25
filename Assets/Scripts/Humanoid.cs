@@ -146,7 +146,7 @@ public class Humanoid : UpgradeCharacter {
     }
     //end upgrade get and setters
 
-    void ApplyDamage(int damage)
+    protected virtual void ApplyDamage(int damage)
     {
         health -= damage;
         if (health <= 0) Destroy(gameObject);

@@ -17,6 +17,7 @@ public class EventHandeler : MonoBehaviour {
     private int timeInWave = 120;
     public float timer;
     public Text timerText;
+    public static bool pause;
 
     void Awake()
     {
@@ -82,5 +83,10 @@ public class EventHandeler : MonoBehaviour {
 
         if (StartBattle != null)
             StartBattle();
+    }
+
+    public static void EndGame()
+    {
+        Application.LoadLevel("EndScene");
     }
 }

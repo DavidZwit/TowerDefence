@@ -11,7 +11,6 @@ GameObject:
   - 212: {fileID: 21295572}
   - 61: {fileID: 6111706}
   - 50: {fileID: 5054362}
-  - 114: {fileID: 11440008}
   - 114: {fileID: 11404424}
   m_Layer: 0
   m_Name: Cat
@@ -58,9 +57,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -38.1639404, y: 111.691605}
   serializedVersion: 2
-  m_Size: {x: 128, y: 128}
+  m_Size: {x: 260.86792, y: 351.376617}
 --- !u!114 &11404424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -86,17 +85,6 @@ MonoBehaviour:
   moveSpeed: 15
   lookRange: 500
   lookSpeed: .200000003
---- !u!114 &11440008
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd45f5c46ad1fa4880b62a3e81dbc30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &21295572
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -115,7 +103,9 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -182,6 +172,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsKinematic
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -21,6 +21,12 @@ public class BaseBehaviour : TurretBase {
         base.Awake();
     }
 
+    protected override void ApplyDamage(int damage)
+    {
+        if (health < 0) EventHandeler.EndGame();
+        base.ApplyDamage(damage);
+    }
+
     public override int AttackRangeUpgrade
     {
         get { return base.AttackRangeUpgrade; }
