@@ -255,10 +255,13 @@ PlayerSettings:
   ps4pnGameCustomData: 1
   playerPrefsSupport: 0
   ps4ReprojectionSupport: 0
+<<<<<<< HEAD
   ps4UseAudio3dBackend: 0
   ps4Audio3dVirtualSpeakerCount: 14
   ps4attribCpuUsage: 0
   ps4SocialScreenEnabled: 0
+=======
+>>>>>>> 249940f199b3b607960539b170c81a004c989ad9
   ps4attribUserManagement: 0
   ps4attribMoveSupport: 0
   ps4attrib3DSupport: 0
@@ -459,7 +462,11 @@ PlayerSettings:
   WebGL::exceptionSupport: 1
   WebGL::memorySize: 256
   iOS::Architecture: 2
+<<<<<<< HEAD
   iOS::EnableIncrementalBuildSupportForIl2cpp: 1
+=======
+  iOS::EnableIncrementalBuildSupportForIl2cpp: 0
+>>>>>>> 249940f199b3b607960539b170c81a004c989ad9
   iOS::ScriptingBackend: 1
   boolPropertyNames:
   - WebGL::analyzeBuildSize
