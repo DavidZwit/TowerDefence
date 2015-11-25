@@ -379,9 +379,14 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
+        value: {x: 1.10000002, y: 1.10000002, z: 1}
+        inSlope: {x: .155915067, y: .153804973, z: 0}
+        outSlope: {x: .155915067, y: .153804973, z: 0}
+        tangentMode: 0
+      - time: .25
         value: {x: 1.05999994, y: 1.03750002, z: 1}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
+        inSlope: {x: .00222672918, y: -.00155415572, z: 0}
+        outSlope: {x: .00222672918, y: -.00155415572, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -405,11 +410,11 @@ AnimationClip:
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: 0
+    m_StopTime: .25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -424,10 +429,15 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
+        value: 1.10000002
+        inSlope: .155915067
+        outSlope: .155915067
+        tangentMode: 0
+      - time: .25
         value: 1.05999994
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
+        inSlope: .00222672918
+        outSlope: .00222672918
+        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalScale.x
@@ -438,10 +448,15 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
+        value: 1.10000002
+        inSlope: .153804973
+        outSlope: .153804973
+        tangentMode: 0
+      - time: .25
         value: 1.03750002
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
+        inSlope: -.00155415572
+        outSlope: -.00155415572
+        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalScale.y
@@ -452,6 +467,11 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .25
         value: 1
         inSlope: 0
         outSlope: 0
@@ -480,25 +500,25 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Highlighted
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Pressed
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Disabled
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
