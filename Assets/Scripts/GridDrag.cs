@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GridDrag : MonoBehaviour {
     private GameObject moveObject;
-    private Vector2 pz;
+    private Vector3 pz;
     private int gridSize = 128;
 
     private bool drag = false;
@@ -22,8 +22,9 @@ public class GridDrag : MonoBehaviour {
 
         pz.x = Mathf.Round(pz.x / gridSize) * gridSize;
         pz.y = Mathf.Round(pz.y / gridSize) * gridSize;
+        pz.z = pz.y / 100;
 
-        if (moveObject != null) moveObject.transform.position = pz;
+        moveObject.transform.position = pz;
     }
 
     public GameObject MoveObject

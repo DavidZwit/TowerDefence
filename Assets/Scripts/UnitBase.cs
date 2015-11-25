@@ -8,11 +8,12 @@ public class UnitBase : Humanoid {
     [SerializeField] protected float lookSpeed = 3;
     protected float nextLook;
     protected Vector3 fallBackSpot;
+    protected Rigidbody2D rb;
 
     protected void Start()
     {
         if (!isFriendly) fallBackSpot = GameObject.Find("Base").transform.position;
-
+        rb = GetComponent<Rigidbody2D>();
         SetRotationPos(fallBackSpot, "lookPos");
     }
 
@@ -24,18 +25,17 @@ public class UnitBase : Humanoid {
             nextLook = Time.time + lookSpeed;
         }
         if (targets.Length > 0 && targets[0] != null) {
-            transform.position = Vector2.MoveTowards(transform.position, targets[0].transform.position, moveSpeed);
+            rb.transform.position = Vector2.MoveTowards(transform.position, targets[0].transform.position, moveSpeed);
             SetRotationPos(targets[0].transform.position, "lookPos");
         } else {
-            transform.position = Vector2.MoveTowards(transform.position, fallBackSpot, moveSpeed);
+            rb.transform.position = Vector2.MoveTowards(transform.position, fallBackSpot, moveSpeed);
             SetRotationPos(fallBackSpot, "lookPos");
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if (inBattle)
-        {
+        if (inBattle) {
             Atack();
             if (!attacking) WalkToTargets();
         }
@@ -45,6 +45,7 @@ public class UnitBase : Humanoid {
     {
             base.StartBattle();
             fallBackSpot = transform.position;
+            
     }
 
     protected override void StopBattle()

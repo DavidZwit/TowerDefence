@@ -10,7 +10,7 @@ public class CreateObject : MonoBehaviour
     private Resources resources;
 
     void Awake()
-    {
+    {   
         parrent = GameObject.Find("Players");
         resources = GameObject.Find("Handeler").GetComponent<Resources>();
     }
@@ -20,7 +20,7 @@ public class CreateObject : MonoBehaviour
         for (int i = 0; i < objectList.Count; i++)
         {
             if (objectList[i].name == objectName)
-            {
+            { 
                 GameObject player = Instantiate(objectList[i], Vector3.zero, Quaternion.identity) as GameObject;
                 player.transform.parent = parrent.transform;
 

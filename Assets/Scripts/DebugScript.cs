@@ -10,6 +10,8 @@ public class DebugScript : MonoBehaviour {
         transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         float angle = (Mathf.Atan2(baseObject.position.y - transform.position.y, baseObject.position.x - transform.position.x) * 180 / Mathf.PI) + 180;
-        print(angle);
+        int result = (int)angle / 90;
+        if (result == 0) result = 4;
+        print(angle + result);
     }
 }
