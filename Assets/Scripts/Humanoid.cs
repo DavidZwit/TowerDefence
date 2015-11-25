@@ -2,8 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Humanoid : UpgradeCharacter {
+public class Humanoid : UpgradeCharacter
+{
     [SerializeField] protected int health = 5;//The health of the object
+    private int maxHealth = 0;//The health of the object
     [SerializeField] protected int maxTargets = 1;//The amound of targets that can be attacked at once
     [SerializeField] protected int atackDamage = 5;//The dammage the attacks do
     [SerializeField] protected float atackSpeed = 2;//The speed the target can attacxk
@@ -12,6 +14,9 @@ public class Humanoid : UpgradeCharacter {
     [SerializeField] protected GameObject projectile = null;//Projectile
     [SerializeField] private float attackSpeedUpgrade;//How fast these things upgrade
     [SerializeField] private int targetsUpgrade, attackRange, healthUpgrade;//How fast these things upgrade
+    [SerializeField] private GameObject healthBar;//The Healthbar GUI
+    [SerializeField] private TextMesh healthBarText;//The Healthbar TEXT
+    protected int healthbarSize;//The max health of the object
     private int targetUpgradeCount, attackRangeUpgradeCount, healthUpgradeCount, attackspeedUpgradeCount;
     protected int power;//The power, is to determen how strong the object is for sorting
     protected float nextFire;//fire rate handeler
@@ -24,10 +29,14 @@ public class Humanoid : UpgradeCharacter {
 
     protected void Awake()
     {
+        maxHealth = health;
+        if (healthBar) healthbarSize = (int)healthBar.transform.localScale.x;
         if (gameObject.tag == "Enemy") { isFriendly = false; targetTag = "Friendly"; inBattle = true; }
         else if (gameObject.tag == "Friendly"){ isFriendly = true; targetTag = "Enemy";}
         if (GetComponent<Animator>() != null) { animator = GetComponent<Animator>();}// animator.SetInteger("attackPos", 3); }
         renderer = GetComponent<SpriteRenderer>();
+
+        updateHealthBar();
     }
 
     protected void Atack()
@@ -109,6 +118,17 @@ public class Humanoid : UpgradeCharacter {
         renderer.color = new Color(1f, 1f, 1f, 1f);
     }
 
+    private void updateHealthBar()
+    {
+        try { animator.SetInteger("Health", (health / 100) * maxHealth); } catch { };
+
+        if (healthBar)
+            healthBar.transform.localScale = new Vector3(((float)health / (float)maxHealth) * healthbarSize, healthBar.transform.localScale.y, healthBar.transform.localScale.z);
+
+        if (healthBarText)
+            healthBarText.text = health.ToString();
+    }
+
     //Upgrade get and setters
     public virtual float AttackSpeedUpgrade
     {
@@ -133,7 +153,10 @@ public class Humanoid : UpgradeCharacter {
         set
         {
             healthUpgradeCount++;
-            health += (healthUpgrade * value); }
+            health += (healthUpgrade * value);
+            if (health > maxHealth) maxHealth = health;
+            updateHealthBar();
+        }
     }
 
     public virtual int MaxTargetsUpgrade
@@ -149,13 +172,18 @@ public class Humanoid : UpgradeCharacter {
     void ApplyDamage(int damage)
     {
         health -= damage;
+        updateHealthBar();
         if (health <= 0) Destroy(gameObject);
     }
 
     public int Health
     {
         get { return health; }
-        set{ health = value; if (health <= 0) Destroy(gameObject);}
+        set
+        {
+            health = value; if (health <= 0) Destroy(gameObject);
+            updateHealthBar();
+        }
     }
 
     protected void Die()
