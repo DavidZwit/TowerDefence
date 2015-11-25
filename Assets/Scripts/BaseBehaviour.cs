@@ -23,8 +23,8 @@ public class BaseBehaviour : TurretBase {
 
     protected override void ApplyDamage(int damage)
     {
-        if (health < 0) EventHandeler.EndGame();
-        base.ApplyDamage(damage);
+        health -= damage;
+        if (health < 0) GameObject.Find("Handeler").GetComponent<EventHandeler>().EndGame();
     }
 
     public override int AttackRangeUpgrade
@@ -38,7 +38,6 @@ public class BaseBehaviour : TurretBase {
                 healthTimes++; health1.SetActive(false); health2.SetActive(true);
             }
             base.AttackRangeUpgrade = value; 
-
         }
     }
 

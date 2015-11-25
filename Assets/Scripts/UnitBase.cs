@@ -35,7 +35,7 @@ public class UnitBase : Humanoid {
 
     void FixedUpdate()
     {
-        if (inBattle) {
+        if (inBattle && !EventHandeler.pause) {
             Atack();
             if (!attacking) WalkToTargets();
         }

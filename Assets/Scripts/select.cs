@@ -53,10 +53,19 @@ public class select : MonoBehaviour
     public void Select()
     {
         selectSetter.Target = theObject;
-        editMouse.MoveObject = theObject;
         selected = true;
 
         selectTile.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+    }
+
+    public void Drag()
+    {
+        editMouse.MoveObject = theObject;
+    }
+
+    public void UnDrag()
+    {
+        editMouse.MoveObject = null;
     }
 
     public void deSelect()

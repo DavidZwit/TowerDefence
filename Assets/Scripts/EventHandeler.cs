@@ -4,10 +4,8 @@ using UnityEngine.UI;
 
 public class EventHandeler : MonoBehaviour {
 
-    private GameObject begin;
-    private GameObject buildTime;
-    private GameObject inWave;
-    private GameObject enemies;
+    private GameObject begin, buildTime, inWave, tryAgain;
+    private GameObject enemies, pauseMenu;
 
     public delegate void Action();
     public delegate void Stop();
@@ -15,8 +13,9 @@ public class EventHandeler : MonoBehaviour {
     public static event Stop StopBattle;
     private int timeInBuild = 60;
     private int timeInWave = 120;
-    public float timer;
-    public Text timerText;
+    private int waveCount;
+    private float timer;
+    private Text timerText, waveCountText;
     public static bool pause;
 
     void Awake()
@@ -24,13 +23,17 @@ public class EventHandeler : MonoBehaviour {
         begin = GameObject.Find("Begin");
         buildTime = GameObject.Find("BuildTime");
         inWave = GameObject.Find("InWave");
+        tryAgain = GameObject.Find("End");
         enemies = GameObject.Find("Enemies");
+        timerText = GameObject.Find("Time_Text").GetComponent<Text>();
+        waveCountText = GameObject.Find("Wave_Text").GetComponent<Text>();
+        pauseMenu = GameObject.Find("PauseMenu");
     }
 
     void FixedUpdate()
     {
         timerText.text = "Time: " + timer;
-        if (Time.time % 1 == 0 && timer > 0) timer--;
+        if (Time.time % 1 == 0 && timer > 0 && !pause) timer--;
 
         if (timer == 0) {
             if (inWave.active) {
@@ -38,8 +41,7 @@ public class EventHandeler : MonoBehaviour {
                 if (enemyLenght == 0) {
                     Build();
                 }
-            }
-            else if (buildTime.active) {
+            } else if (buildTime.active) {
                 Wave();
             }
         } 
@@ -55,6 +57,8 @@ public class EventHandeler : MonoBehaviour {
         begin.SetActive(true);
         buildTime.SetActive(false);
         inWave.SetActive(false);
+        tryAgain.SetActive(false);
+        pauseMenu.SetActive(false);
     }
 
     public void Build()
@@ -76,6 +80,7 @@ public class EventHandeler : MonoBehaviour {
 
     public void Wave()
     {
+        waveCount++; waveCountText.text = "Wave " + waveCount;
         begin.SetActive(false);
         buildTime.SetActive(false);
         inWave.SetActive(true);
@@ -85,8 +90,26 @@ public class EventHandeler : MonoBehaviour {
             StartBattle();
     }
 
-    public static void EndGame()
+    public void EndGame()
     {
-        Application.LoadLevel("EndScene");
+        begin.SetActive(false);
+        buildTime.SetActive(false);
+        inWave.SetActive(false);
+        tryAgain.SetActive(true);
+    }
+
+    public void loadThisLevel()
+    {
+        Application.LoadLevel(Application.loadedLevel);
+    }
+
+    public void pauseGame()
+    {
+        if (pause) {
+            pauseMenu.SetActive(false);
+        } else {
+            pauseMenu.SetActive(true);
+        }
+        pause = !pause;
     }
 }

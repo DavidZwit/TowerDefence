@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Humanoid : UpgradeCharacter {
+public class Humanoid : MonoBehaviour {
     [SerializeField] protected int health = 5;//The health of the object
     [SerializeField] protected int maxTargets = 1;//The amound of targets that can be attacked at once
     [SerializeField] protected int atackDamage = 5;//The dammage the attacks do
