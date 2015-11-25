@@ -141,7 +141,7 @@ public class Humanoid : MonoBehaviour {
         get { return maxTargets; }
         set
         {
-            MaxTargetsUpgrade++; 
+            maxTargets++; 
             maxTargets -= (targetsUpgrade * value); }
     }
     //end upgrade get and setters
@@ -167,13 +167,11 @@ public class Humanoid : MonoBehaviour {
     protected virtual void StartBattle()
     {
         inBattle = true;
-        if (GetComponent<select>() == true)GetComponent<select>().EditMode = false;
     }
 
     protected virtual void StopBattle()
     {
         inBattle = false;
-        if (GetComponent<select>() == true) GetComponent<select>().EditMode = true;
     }
 
     void OnEnable()

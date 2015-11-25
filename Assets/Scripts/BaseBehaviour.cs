@@ -61,6 +61,7 @@ public class BaseBehaviour : TurretBase {
         set {
             if (healthTimes == 0) {
                 healthTimes++; health1.SetActive(true);
+                print("upgrade health");
             }
             else if (healthTimes == 1) {
                 healthTimes++; health1.SetActive(false); health2.SetActive(true);

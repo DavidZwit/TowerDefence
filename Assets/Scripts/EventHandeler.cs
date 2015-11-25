@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class EventHandeler : MonoBehaviour {
 
     private GameObject begin, buildTime, inWave, tryAgain;
-    private GameObject enemies, pauseMenu;
+    private GameObject enemies, pauseMenu, p1, p2;
 
     public delegate void Action();
     public delegate void Stop();
@@ -28,6 +28,8 @@ public class EventHandeler : MonoBehaviour {
         timerText = GameObject.Find("Time_Text").GetComponent<Text>();
         waveCountText = GameObject.Find("Wave_Text").GetComponent<Text>();
         pauseMenu = GameObject.Find("PauseMenu");
+        p1 = GameObject.Find("player_1");
+        p2 = GameObject.Find("player_2");
     }
 
     void FixedUpdate()
@@ -59,6 +61,8 @@ public class EventHandeler : MonoBehaviour {
         inWave.SetActive(false);
         tryAgain.SetActive(false);
         pauseMenu.SetActive(false);
+        p1.SetActive(false);
+        p2.SetActive(false);
     }
 
     public void Build()
@@ -66,6 +70,8 @@ public class EventHandeler : MonoBehaviour {
         begin.SetActive(false);
         buildTime.SetActive(true);
         inWave.SetActive(false);
+        p1.SetActive(true);
+        p2.SetActive(false);
         timer = timeInBuild;
 
         if (StopBattle != null)
@@ -85,6 +91,8 @@ public class EventHandeler : MonoBehaviour {
         buildTime.SetActive(false);
         inWave.SetActive(true);
         timer = timeInWave;
+        p1.SetActive(false);
+        p2.SetActive(true);
 
         if (StartBattle != null)
             StartBattle();
@@ -96,6 +104,7 @@ public class EventHandeler : MonoBehaviour {
         buildTime.SetActive(false);
         inWave.SetActive(false);
         tryAgain.SetActive(true);
+        pause = true;
     }
 
     public void loadThisLevel()

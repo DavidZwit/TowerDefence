@@ -35,24 +35,27 @@ public class Resources : MonoBehaviour {
     {
         get { return fish; }
         set {
+            fish = value;
             fishText.text = "" + fish;
-            fish = value; }
+        }
     }
 
     public float Yarn
     {
         get { return yarn; }
         set {
+            yarn = value;
             yarnText.text = "" + yarn;
-            yarn = value; }
+        }
     }
 
     public float Cardboard
     {
         get { return cardboard; }
         set {
+            cardboard = value;
             cardboardText.text = "" + cardboard;
-            cardboard = value; }
+        }
     }
     public int MineStrength
     {

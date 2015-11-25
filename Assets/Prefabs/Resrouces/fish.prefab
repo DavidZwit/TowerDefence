@@ -13,7 +13,7 @@ GameObject:
   - 61: {fileID: 6168616}
   m_Layer: 0
   m_Name: fish
-  m_TagString: Untagged
+  m_TagString: Friendly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,7 +55,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  lifetime: 5
 --- !u!212 &21237790
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -112,6 +111,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: ff06e85b284b83f49a123b349b54ed60,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Friendly
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134594}

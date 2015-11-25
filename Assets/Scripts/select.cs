@@ -37,15 +37,7 @@ public class select : MonoBehaviour
                     } else if (selected) {
                         deSelect();
                     }
-                }  else {
-                    if (!selected) {
-                        selectSetter.Target = theObject;
-                        selected = true;
-                    } else if (selected) {
-                        selectSetter.Target = null;
-                        selected = false;
-                    }
-                }
+                }  
             }
         }
     }
@@ -77,9 +69,26 @@ public class select : MonoBehaviour
         selectTile.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
     }
 
-    public bool EditMode
+    void NotEditMode()
     {
-        get { return editMode; }
-        set { editMode = value; }
+        editMode = false;
     }
+
+    void EditMode()
+    {
+        editMode = true;
+    }
+
+    void OnEnable()
+    {
+        EventHandeler.StartBattle += NotEditMode;
+        EventHandeler.StopBattle += EditMode;
+    }
+
+    void OnDestroy ()
+    {
+        EventHandeler.StartBattle -= NotEditMode;
+        EventHandeler.StopBattle -= EditMode;
+    }
+
 }

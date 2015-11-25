@@ -41,6 +41,8 @@ public class UpgradeCharacter : MonoBehaviour {
                 selected.Target.gameObject.GetComponent<TurretBase>().HealthUpgrade++;
             } else if (selected.Target.name.Contains("Cat")) {
                 selected.Target.gameObject.GetComponent<UnitBase>().HealthUpgrade++;
+            } else if (selected.Target.name == "Base") {
+                selected.Target.gameObject.GetComponent<BaseBehaviour>().HealthUpgrade++;
             } resources.Fish -= 2;
         }
     }
@@ -53,7 +55,9 @@ public class UpgradeCharacter : MonoBehaviour {
                 selected.Target.gameObject.GetComponent<TurretBase>().AttackSpeedUpgrade++;
             } else if (selected.Target.name.Contains("Cat")) {
                 selected.Target.gameObject.GetComponent<UnitBase>().AttackSpeedUpgrade++;
-            } resources.Fish--; resources.Yarn--;
+            } else if (selected.Target.name == "Base") {
+                selected.Target.gameObject.GetComponent<BaseBehaviour>().AttackSpeedUpgrade++;
+            }resources.Fish--; resources.Yarn--;
         }
     }
 
@@ -64,7 +68,9 @@ public class UpgradeCharacter : MonoBehaviour {
                 selected.Target.gameObject.GetComponent<TurretBase>().AttackRangeUpgrade++;
             } else if (selected.Target.name.Contains("Cat")) {
                 selected.Target.gameObject.GetComponent<UnitBase>().AttackRangeUpgrade++;
-            } resources.Yarn--; resources.Cardboard--;
+            } else if (selected.Target.name == "Base") {
+                selected.Target.gameObject.GetComponent<BaseBehaviour>().AttackRangeUpgrade++;
+            }resources.Yarn--; resources.Cardboard--;
         }
     }
 
@@ -75,7 +81,9 @@ public class UpgradeCharacter : MonoBehaviour {
                 selected.Target.gameObject.GetComponent<TurretBase>().MaxTargetsUpgrade++;
             } else if (selected.Target.name.Contains("Cat")) {
                 selected.Target.gameObject.GetComponent<UnitBase>().MaxTargetsUpgrade++;
-            } resources.Cardboard--; resources.Yarn--;
+            } else if (selected.Target.name == "Base") {
+                selected.Target.gameObject.GetComponent<BaseBehaviour>().MaxTargetsUpgrade++;
+            }resources.Cardboard--; resources.Yarn--;
 
         }
     }
