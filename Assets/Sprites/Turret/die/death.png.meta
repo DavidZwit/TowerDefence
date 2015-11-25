@@ -1,0 +1,473 @@
+fileFormatVersion: 2
+guid: d1b7adcc395eaa74dbbc6707efc851e3
+timeCreated: 1448291781
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: death_0
+    21300002: death_1
+    21300004: death_2
+    21300006: death_3
+    21300008: death_4
+    21300010: death_5
+    21300012: death_6
+    21300014: death_7
+    21300016: death_8
+    21300018: death_9
+    21300020: death_10
+    21300022: death_11
+    21300024: death_12
+    21300026: death_13
+    21300028: death_14
+    21300030: death_15
+    21300032: death_16
+    21300034: death_17
+    21300036: death_18
+    21300038: death_19
+    21300040: death_20
+    21300042: death_21
+    21300044: death_22
+    21300046: death_23
+    21300048: death_24
+    21300050: death_25
+    21300052: death_26
+    21300054: death_27
+    21300056: death_28
+    21300058: death_29
+    21300060: death_30
+    21300062: death_31
+    21300064: death_32
+    21300066: death_33
+    21300068: death_34
+    21300070: death_35
+    21300072: death_36
+    21300074: death_37
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: death_0
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 7535
+        width: 176
+        height: 419
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_1
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 7535
+        width: 176
+        height: 419
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_2
+      rect:
+        serializedVersion: 2
+        x: 2026
+        y: 7535
+        width: 264
+        height: 431
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_3
+      rect:
+        serializedVersion: 2
+        x: 2670
+        y: 7535
+        width: 552
+        height: 535
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_4
+      rect:
+        serializedVersion: 2
+        x: 3306
+        y: 7535
+        width: 742
+        height: 595
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 6879
+        width: 744
+        height: 591
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_6
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 6879
+        width: 758
+        height: 583
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_7
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 6879
+        width: 760
+        height: 575
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_8
+      rect:
+        serializedVersion: 2
+        x: 2474
+        y: 6879
+        width: 768
+        height: 571
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_9
+      rect:
+        serializedVersion: 2
+        x: 3290
+        y: 6879
+        width: 768
+        height: 567
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_10
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 6234
+        width: 778
+        height: 556
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_11
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 6234
+        width: 776
+        height: 552
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_12
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 6234
+        width: 784
+        height: 550
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_13
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 6234
+        width: 784
+        height: 544
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_14
+      rect:
+        serializedVersion: 2
+        x: 3278
+        y: 6234
+        width: 792
+        height: 540
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_15
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 5582
+        width: 792
+        height: 536
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_16
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 5582
+        width: 800
+        height: 532
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_17
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 5582
+        width: 800
+        height: 528
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_18
+      rect:
+        serializedVersion: 2
+        x: 2455
+        y: 5582
+        width: 807
+        height: 524
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_19
+      rect:
+        serializedVersion: 2
+        x: 3271
+        y: 5582
+        width: 655
+        height: 520
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_20
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 4927
+        width: 394
+        height: 507
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_21
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 4927
+        width: 394
+        height: 513
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_22
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 4927
+        width: 402
+        height: 518
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_23
+      rect:
+        serializedVersion: 2
+        x: 2714
+        y: 4927
+        width: 408
+        height: 523
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_24
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 4927
+        width: 412
+        height: 527
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 4271
+        width: 426
+        height: 539
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_26
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 4271
+        width: 432
+        height: 545
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_27
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 4271
+        width: 435
+        height: 549
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_28
+      rect:
+        serializedVersion: 2
+        x: 2698
+        y: 4271
+        width: 440
+        height: 555
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_29
+      rect:
+        serializedVersion: 2
+        x: 3511
+        y: 4271
+        width: 447
+        height: 529
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_30
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 3626
+        width: 452
+        height: 522
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_31
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 3626
+        width: 460
+        height: 524
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_32
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 3626
+        width: 464
+        height: 528
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_33
+      rect:
+        serializedVersion: 2
+        x: 2683
+        y: 3626
+        width: 471
+        height: 532
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_34
+      rect:
+        serializedVersion: 2
+        x: 3499
+        y: 3626
+        width: 475
+        height: 534
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_35
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 2974
+        width: 140
+        height: 262
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_36
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 3235
+        width: 14
+        height: 10
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_37
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 2974
+        width: 135
+        height: 259
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

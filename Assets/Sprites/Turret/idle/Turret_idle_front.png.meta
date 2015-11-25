@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: 7d9db2508644a7845bfc1d896a9f5374
+timeCreated: 1448393060
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Turret_idle_front_0
+    21300002: Turret_idle_front_1
+    21300004: Turret_idle_front_2
+    21300006: Turret_idle_front_3
+    21300008: Turret_idle_front_4
+    21300010: Turret_idle_front_5
+    21300012: Turret_idle_front_6
+    21300014: Turret_idle_front_7
+    21300016: Turret_idle_front_8
+    21300018: Turret_idle_front_9
+    21300020: Turret_idle_front_10
+    21300022: Turret_idle_front_11
+    21300024: Turret_idle_front_12
+    21300026: Turret_idle_front_13
+    21300028: Turret_idle_front_14
+    21300030: Turret_idle_front_15
+    21300032: Turret_idle_front_16
+    21300034: Turret_idle_front_17
+    21300036: Turret_idle_front_18
+    21300038: Turret_idle_front_19
+    21300040: Turret_idle_front_20
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Turret_idle_front_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1631
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 1631
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_2
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1631
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_3
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1631
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_4
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 1631
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1214
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_6
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 1214
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_7
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1214
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_8
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1214
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_9
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 1214
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 797
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_11
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 797
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_12
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 797
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_13
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 797
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_14
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 797
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 380
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_16
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 380
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_17
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 380
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_18
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 380
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Turret_idle_front_19
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 380
+        width: 183
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

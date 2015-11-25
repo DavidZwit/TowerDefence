@@ -41,8 +41,8 @@ public class CharacterTakeOver : MonoBehaviour {
 
     void walk()
     {
-        if (mouseDown && targetType == 2) {
-            moveObject.transform.position = Vector2.MoveTowards(moveObject.transform.position, mousePos, moveSpeed);
+        if (targetType == 2 && moveObject.transform.position.x != mousePos.x && moveObject.transform.position.y != mousePos.y) {
+            moveObject.transform.position = Vector3.MoveTowards(moveObject.transform.position, new Vector3(mousePos.x, mousePos.y, mousePos.y / 100), moveSpeed);
         }
     }
 	

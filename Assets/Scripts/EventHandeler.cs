@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class EventHandeler : MonoBehaviour {
 
@@ -12,6 +13,10 @@ public class EventHandeler : MonoBehaviour {
     public delegate void Stop();
     public static event Action StartBattle;
     public static event Stop StopBattle;
+    private int timeInBuild = 60;
+    private int timeInWave = 120;
+    public float timer;
+    public Text timerText;
 
     void Awake()
     {
@@ -19,6 +24,24 @@ public class EventHandeler : MonoBehaviour {
         buildTime = GameObject.Find("BuildTime");
         inWave = GameObject.Find("InWave");
         enemies = GameObject.Find("Enemies");
+    }
+
+    void FixedUpdate()
+    {
+        timerText.text = "Time: " + timer;
+        if (Time.time % 1 == 0 && timer > 0) timer--;
+
+        if (timer == 0) {
+            if (inWave.active) {
+                int enemyLenght = GameObject.FindGameObjectsWithTag("Enemy").Length;
+                if (enemyLenght == 0) {
+                    Build();
+                }
+            }
+            else if (buildTime.active) {
+                Wave();
+            }
+        } 
     }
 
     void Start()
@@ -38,6 +61,7 @@ public class EventHandeler : MonoBehaviour {
         begin.SetActive(false);
         buildTime.SetActive(true);
         inWave.SetActive(false);
+        timer = timeInBuild;
 
         if (StopBattle != null)
             StopBattle();
@@ -54,6 +78,7 @@ public class EventHandeler : MonoBehaviour {
         begin.SetActive(false);
         buildTime.SetActive(false);
         inWave.SetActive(true);
+        timer = timeInWave;
 
         if (StartBattle != null)
             StartBattle();

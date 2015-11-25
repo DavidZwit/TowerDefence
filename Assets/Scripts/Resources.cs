@@ -1,12 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Resources : MonoBehaviour {
 
     [SerializeField] private float fish;
     [SerializeField] private float yarn;
     [SerializeField] private float cardboard;
+    private Text fishText, cardboardText, yarnText;
     private int mineStrength = 1;
+
+    void Awake()
+    {
+        fishText = GameObject.Find("FishScore").GetComponent<Text>();
+        yarnText = GameObject.Find("YarnScore").GetComponent<Text>();
+        cardboardText = GameObject.Find("CardboardScore").GetComponent<Text>();
+    }
 
     public void EditResources(string objectName)
     {
@@ -18,19 +27,25 @@ public class Resources : MonoBehaviour {
     public float Fish
     {
         get { return fish; }
-        set { fish = value; }
+        set {
+            fishText.text = "Fish: " + fish;
+            fish = value; }
     }
 
     public float Yarn
     {
         get { return yarn; }
-        set { yarn = value; }
+        set {
+            yarnText.text = "Yarn: " + yarn;
+            yarn = value; }
     }
 
     public float Cardboard
     {
         get { return cardboard; }
-        set { cardboard = value; }
+        set {
+            cardboardText.text = "Cardboard: " + cardboard;
+            cardboard = value; }
     }
     public int MineStrength
     {

@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: a3e5d3a65acf69f4097575690f92ff99
+timeCreated: 1448392677
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: turret_idle_back_0
+    21300002: turret_idle_back_1
+    21300004: turret_idle_back_2
+    21300006: turret_idle_back_3
+    21300008: turret_idle_back_4
+    21300010: turret_idle_back_5
+    21300012: turret_idle_back_6
+    21300014: turret_idle_back_7
+    21300016: turret_idle_back_8
+    21300018: turret_idle_back_9
+    21300020: turret_idle_back_10
+    21300022: turret_idle_back_11
+    21300024: turret_idle_back_12
+    21300026: turret_idle_back_13
+    21300028: turret_idle_back_14
+    21300030: turret_idle_back_15
+    21300032: turret_idle_back_16
+    21300034: turret_idle_back_17
+    21300036: turret_idle_back_18
+    21300038: turret_idle_back_19
+    21300040: turret_idle_back_20
+    21300042: turret_idle_back_21
+    21300044: turret_idle_back_22
+    21300046: turret_idle_back_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: turret_idle_back_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1624
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1624
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_2
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1624
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_3
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1624
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_4
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1624
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_5
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 1624
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_7
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1200
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_8
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1200
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_9
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1200
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_10
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1200
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_11
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 1200
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 776
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_13
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 776
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_14
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 776
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_15
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 776
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_16
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 776
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_17
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 776
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turret_idle_back_19
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 352
+        width: 149
+        height: 424
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
