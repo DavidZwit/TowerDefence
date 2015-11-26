@@ -6,15 +6,15 @@ public class UpgradeCharacter : MonoBehaviour {
     private Resources resources;
     private Selected selected;
     private bool activatedButtons;
-    private GameObject upgradeMaxTargetsButton, 
-        upgradeRangeButton, 
-        upgradeAttackSpeedButton, 
-        upgradeHealthButton,
-        upgradeUI;
+    private Button upgradeMaxTargetsButton,
+        upgradeRangeButton,
+        upgradeAttackSpeedButton,
+        upgradeHealthButton;
     private Text maxTargetsLevel,
         attackRangeLevel,
         attackSpeedLevel,
         healthUpgradeLevel;
+    private GameObject upgradeUI;
     private int health, attackRange, attackSpeed, maxTargets;
 
 
@@ -22,16 +22,16 @@ public class UpgradeCharacter : MonoBehaviour {
     {
         resources = GameObject.Find("Handeler").GetComponent<Resources>();
         selected = GameObject.Find("Handeler").GetComponent<Selected>();
-        upgradeMaxTargetsButton = GameObject.Find("MaxTargetsUpgrade");
+        upgradeMaxTargetsButton = GameObject.Find("MaxTargetsUpgrade").GetComponent<Button>();
         maxTargetsLevel = GameObject.Find("MaxTargtsUpgradeText").GetComponent<Text>();
 
-        upgradeRangeButton = GameObject.Find("AttackRangeUpgrade");
+        upgradeRangeButton = GameObject.Find("AttackRangeUpgrade").GetComponent<Button>();
         attackRangeLevel = GameObject.Find("AttackRangeUpgradeText").GetComponent<Text>();
 
-        upgradeAttackSpeedButton = GameObject.Find("AttackSpeedUpgrade");
+        upgradeAttackSpeedButton = GameObject.Find("AttackSpeedUpgrade").GetComponent<Button>();
         attackSpeedLevel = GameObject.Find("AttackSpeedUpgradeText").GetComponent<Text>();
 
-        upgradeHealthButton = GameObject.Find("AttackSpeedUpgrade");
+        upgradeHealthButton = GameObject.Find("HealthUpgrade").GetComponent<Button>();
         healthUpgradeLevel = GameObject.Find("HealthUpgradeText").GetComponent<Text>();
         
         upgradeUI = GameObject.Find("UpgradeCharacter");
@@ -46,13 +46,12 @@ public class UpgradeCharacter : MonoBehaviour {
             activatedButtons = true;
             UpdateButtons();
         }
-
     }
 
     private void UpdateButtons()
     {
+        if (!EventHandeler.pause) { 
         upgradeUI.SetActive(true);
-
         if (selected.Target.name.Contains("Tower")) {
             TurretBase script = selected.Target.gameObject.GetComponent<TurretBase>();
             health = script.HealthUpgradeCount;
@@ -78,10 +77,11 @@ public class UpgradeCharacter : MonoBehaviour {
         attackSpeedLevel.text = "UpgradeAttackSpeed" + attackSpeed;
         healthUpgradeLevel.text = "UpgradeHealth" + health;
 
-        if (resources.Fish <= 2 || health > 10) upgradeHealthButton.SetActive(false); else upgradeHealthButton.SetActive(true);
-        if (resources.Fish <= 1 || resources.Yarn <= 1 || attackSpeed > 10 ) upgradeAttackSpeedButton.SetActive(false); else upgradeAttackSpeedButton.SetActive(true);
-        if (resources.Yarn <= 1 || resources.Cardboard <= 1 || attackRange > 10) upgradeRangeButton.SetActive(false); else upgradeRangeButton.SetActive(true);
-        if (resources.Cardboard <= 1 || resources.Yarn <= 1 || maxTargets <= 0) upgradeMaxTargetsButton.SetActive(false); else upgradeMaxTargetsButton.SetActive(true);
+        if (resources.Fish <= 2 || health >= 10) upgradeHealthButton.interactable = false; else upgradeHealthButton.interactable = true;
+        if (resources.Fish <= 1 || resources.Yarn <= 1 || attackSpeed <= 10) upgradeAttackSpeedButton.interactable = false; else upgradeAttackSpeedButton.interactable = true;
+        if (resources.Yarn <= 1 || resources.Cardboard <= 1 || attackRange >= 10) upgradeRangeButton.interactable = false; else upgradeRangeButton.interactable = true;
+        if (resources.Cardboard <= 1 || resources.Yarn <= 1 || maxTargets >= 10) upgradeMaxTargetsButton.interactable = false; else upgradeMaxTargetsButton.interactable = true;
+        }
     }
 
     public void UpgradeHealth()
@@ -107,8 +107,7 @@ public class UpgradeCharacter : MonoBehaviour {
                 selected.Target.gameObject.GetComponent<UnitBase>().AttackSpeedUpgrade++; UpdateButtons();
             } else if (selected.Target.name == "Base") {
                 selected.Target.gameObject.GetComponent<BaseBehaviour>().AttackSpeedUpgrade++; UpdateButtons();
-            }
-            resources.Fish--; resources.Yarn--;
+            } resources.Fish--; resources.Yarn--;
         }
     }
 
@@ -121,8 +120,7 @@ public class UpgradeCharacter : MonoBehaviour {
                 selected.Target.gameObject.GetComponent<UnitBase>().AttackRangeUpgrade++; UpdateButtons();
             } else if (selected.Target.name == "Base") {
                 selected.Target.gameObject.GetComponent<BaseBehaviour>().AttackRangeUpgrade++; UpdateButtons();
-            }
-            resources.Yarn--; resources.Cardboard--;
+            } resources.Yarn--; resources.Cardboard--;
         }
     }
 
@@ -135,9 +133,7 @@ public class UpgradeCharacter : MonoBehaviour {
                 selected.Target.gameObject.GetComponent<UnitBase>().MaxTargetsUpgrade++; UpdateButtons();
             } else if (selected.Target.name == "Base") {
                 selected.Target.gameObject.GetComponent<BaseBehaviour>().MaxTargetsUpgrade++; UpdateButtons();
-            }
-            resources.Cardboard--; resources.Yarn--;
-
+            } resources.Cardboard--; resources.Yarn--;
         }
     }
 }

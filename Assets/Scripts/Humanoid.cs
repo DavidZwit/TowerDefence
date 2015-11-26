@@ -2,16 +2,21 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Humanoid : MonoBehaviour {
+public class Humanoid : MonoBehaviour
+{
     [SerializeField] protected int health = 5;//The health of the object
+    private int maxHealth = 0;//The health of the object
     [SerializeField] protected int maxTargets = 1;//The amound of targets that can be attacked at once
     [SerializeField] protected int atackDamage = 5;//The dammage the attacks do
     [SerializeField] protected float atackSpeed = 2;//The speed the target can attacxk
-    [SerializeField] protected int atackRange = 500;//Range object can atack from
+    [SerializeField] public int atackRange = 500;//Range object can atack from
     [SerializeField] protected Vector3 damagePosOffset;//The offset form the piffit point the damage is given
     [SerializeField] protected GameObject projectile = null;//Projectile
     [SerializeField] private float attackSpeedUpgrade;//How fast these things upgrade
     [SerializeField] private int targetsUpgrade, attackRange, healthUpgrade;//How fast these things upgrade
+    [SerializeField] private GameObject healthBar;//The Healthbar GUI
+    [SerializeField] private TextMesh healthBarText;//The Healthbar TEXT
+    protected int healthbarSize;//The max health of the object
     private int targetUpgradeCount, attackRangeUpgradeCount, healthUpgradeCount, attackspeedUpgradeCount;
     protected int power;//The power, is to determen how strong the object is for sorting
     protected float nextFire;//fire rate handeler
@@ -19,15 +24,17 @@ public class Humanoid : MonoBehaviour {
     protected Animator animator;//Gets the animator object
     protected GameObject[] targets;//The targets to atack
     protected bool attacking, moving;//Says if object is atacking
-    protected SpriteRenderer renderer;
     protected bool inBattle, isFriendly;
 
     protected void Awake()
     {
+        maxHealth = health;
+        if (healthBar) healthbarSize = (int)healthBar.transform.localScale.x;
         if (gameObject.tag == "Enemy") { isFriendly = false; targetTag = "Friendly"; inBattle = true; }
         else if (gameObject.tag == "Friendly"){ isFriendly = true; targetTag = "Enemy";}
         if (GetComponent<Animator>() != null) { animator = GetComponent<Animator>();}// animator.SetInteger("attackPos", 3); }
-        renderer = GetComponent<SpriteRenderer>();
+
+        updateHealthBar();
     }
 
     protected void Atack()
@@ -45,8 +52,7 @@ public class Humanoid : MonoBehaviour {
                 for (var i = checkLength - 1; i >= 0; i-- )
                 {
                     //Setting animation variables
-                    //renderer.color = new Color(1f, 0f, 1f);
-                    //Invoke("resetColor", 0.01f);
+                    Invoke("resetColor", 0.01f);
                     attacking = true;  SetRotationPos(targets[i].transform.position, "attackPos");
 
                     if (projectile != null) { //if it is an turret
@@ -72,7 +78,6 @@ public class Humanoid : MonoBehaviour {
     protected GameObject[] CheckTargets(int range)
     {
         //Grabbing all the targets and puting them in an array
-       // renderer.color = new Color(0f, 1f, 1f); Invoke("resetColor", 0.2f);
         List<GameObject> targets = new List<GameObject>();
         foreach (Collider2D coll in Physics2D.OverlapCircleAll(transform.position, range)){
             if (coll.gameObject.tag == targetTag){
@@ -104,9 +109,15 @@ public class Humanoid : MonoBehaviour {
         return (Mathf.Atan2(to.y - from.y, to.x - from.x) * 180 / Mathf.PI) + 180;
     }
 
-    protected void resetColor()
+    private void updateHealthBar()
     {
-        renderer.color = new Color(1f, 1f, 1f, 1f);
+        try { animator.SetInteger("Health", (health / 100) * maxHealth); } catch { };
+
+        if (healthBar)
+            healthBar.transform.localScale = new Vector3(((float)health / (float)maxHealth) * healthbarSize, healthBar.transform.localScale.y, healthBar.transform.localScale.z);
+
+        if (healthBarText)
+            healthBarText.text = health.ToString();
     }
 
     //Upgrade get and setters
@@ -116,15 +127,15 @@ public class Humanoid : MonoBehaviour {
         set
         {
             attackspeedUpgradeCount++;
-            if (atackSpeed > 0) atackSpeed -= (attackSpeedUpgrade * 1); }
+            if (atackSpeed > 0) atackSpeed -= (attackSpeedUpgrade * value); }
     }
 
     public virtual int AttackRangeUpgrade
     {
         get { return atackRange; }
         set
-        {   attackRangeUpgradeCount+=1;
-            atackRange += (AttackRangeUpgrade * 1); }
+        {   attackRangeUpgradeCount++;
+            atackRange += (AttackRangeUpgrade * value); }
     }
 
     public virtual int HealthUpgrade
@@ -132,8 +143,11 @@ public class Humanoid : MonoBehaviour {
         get { return Health; }
         set
         {
-            healthUpgradeCount+=1;
-            health += (healthUpgrade * 1); }
+            healthUpgradeCount++;
+            health += (healthUpgrade * value);
+            if (health > maxHealth) maxHealth = health;
+            updateHealthBar();
+        }
     }
 
     public virtual int MaxTargetsUpgrade
@@ -141,14 +155,16 @@ public class Humanoid : MonoBehaviour {
         get { return maxTargets; }
         set
         {
-            targetUpgradeCount+=1; 
-            maxTargets += (targetsUpgrade * 1); }
+            maxTargets++;
+            maxTargets -= (targetsUpgrade * value);
+        }
     }
 
-    //Getters and setters for getting the upgraded amound
+    //Getters and setters for geting the upgraded amound
+
     public int TargetUpgradeCount
     {
-        get { return targetUpgradeCount;}
+        get { return targetUpgradeCount; }
         set { targetUpgradeCount = value; }
     }
 
@@ -169,18 +185,23 @@ public class Humanoid : MonoBehaviour {
         get { return attackspeedUpgradeCount; }
         set { attackspeedUpgradeCount = value; }
     }
-    
-    //Damage handeling
+
+    //Dealling damage and adding health
     protected virtual void ApplyDamage(int damage)
     {
         health -= damage;
+        updateHealthBar();
         if (health <= 0) Destroy(gameObject);
     }
 
     public int Health
     {
         get { return health; }
-        set{ health = value; if (health <= 0) Destroy(gameObject);}
+        set
+        {
+            health = value; if (health <= 0) Destroy(gameObject);
+            updateHealthBar();
+        }
     }
 
     protected void Die()

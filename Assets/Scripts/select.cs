@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 
 public class select : MonoBehaviour
 {
     private bool editMode = true;
 
-    private bool inWave, selected;
+    private bool selected = false;
     private GridDrag editMouse;
     private Selected selectSetter;
-    private GameObject selectTile, theObject;
+    private GameObject selectTile, theObject, lastObject;
     private bool nothingSelected;
 
     void Awake()
@@ -20,20 +21,24 @@ public class select : MonoBehaviour
 
     void Update()
     {
+        //print(eventsystem.IsPointerOverGameObject());
         if (selected) selectTile.transform.position = transform.position;
 
         if (Input.GetMouseButtonDown(0))
         {
             nothingSelected = false;
             try {
-                theObject = Physics2D.OverlapCircle(Camera.main.ScreenToWorldPoint(Input.mousePosition), 100).gameObject;
+                theObject = Physics2D.OverlapCircle(Camera.main.ScreenToWorldPoint(Input.mousePosition), 1).gameObject;
             }
-            catch { nothingSelected = true; }
+            catch {
+                nothingSelected = true;
+            }
             if (!nothingSelected && theObject.tag == "Friendly")
             {
                 if (editMode) {
                     if (!selected) {
                         Select(theObject);
+                        lastObject = theObject;
                     } else if (selected) {
                         deSelect();
                     }

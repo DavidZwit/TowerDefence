@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class UnitBase : Humanoid {
     [SerializeField] protected int moveSpeed = 50;
-    [SerializeField] protected int lookRange = 500;
+    [SerializeField] public int lookRange = 500;
     [SerializeField] protected float lookSpeed = 3;
     protected float nextLook;
     protected Vector3 fallBackSpot;

@@ -1,0 +1,1574 @@
+fileFormatVersion: 2
+guid: 52cee1dba5c97b841905d69964879ee6
+timeCreated: 1448553047
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sprites_cat(1)_0
+    21300002: sprites_cat(1)_1
+    21300004: sprites_cat(1)_2
+    21300006: sprites_cat(1)_3
+    21300008: sprites_cat(1)_4
+    21300010: sprites_cat(1)_5
+    21300012: sprites_cat(1)_6
+    21300014: sprites_cat(1)_7
+    21300016: sprites_cat(1)_8
+    21300018: sprites_cat(1)_9
+    21300020: sprites_cat(1)_10
+    21300022: sprites_cat(1)_11
+    21300024: sprites_cat(1)_12
+    21300026: sprites_cat(1)_13
+    21300028: sprites_cat(1)_14
+    21300030: sprites_cat(1)_15
+    21300032: sprites_cat(1)_16
+    21300034: sprites_cat(1)_17
+    21300036: sprites_cat(1)_18
+    21300038: sprites_cat(1)_19
+    21300040: sprites_cat(1)_20
+    21300042: sprites_cat(1)_21
+    21300044: sprites_cat(1)_22
+    21300046: sprites_cat(1)_23
+    21300048: sprites_cat(1)_24
+    21300050: sprites_cat(1)_25
+    21300052: sprites_cat(1)_26
+    21300054: sprites_cat(1)_27
+    21300056: sprites_cat(1)_28
+    21300058: sprites_cat(1)_29
+    21300060: sprites_cat(1)_30
+    21300062: sprites_cat(1)_31
+    21300064: sprites_cat(1)_32
+    21300066: sprites_cat(1)_33
+    21300068: sprites_cat(1)_34
+    21300070: sprites_cat(1)_35
+    21300072: sprites_cat(1)_36
+    21300074: sprites_cat(1)_37
+    21300076: sprites_cat(1)_38
+    21300078: sprites_cat(1)_39
+    21300080: sprites_cat(1)_40
+    21300082: sprites_cat(1)_41
+    21300084: sprites_cat(1)_42
+    21300086: sprites_cat(1)_43
+    21300088: sprites_cat(1)_44
+    21300090: sprites_cat(1)_45
+    21300092: sprites_cat(1)_46
+    21300094: sprites_cat(1)_47
+    21300096: sprites_cat(1)_48
+    21300098: sprites_cat(1)_49
+    21300100: sprites_cat(1)_50
+    21300102: sprites_cat(1)_51
+    21300104: sprites_cat(1)_52
+    21300106: sprites_cat(1)_53
+    21300108: sprites_cat(1)_54
+    21300110: sprites_cat(1)_55
+    21300112: sprites_cat(1)_56
+    21300114: sprites_cat(1)_57
+    21300116: sprites_cat(1)_58
+    21300118: sprites_cat(1)_59
+    21300120: sprites_cat(1)_60
+    21300122: sprites_cat(1)_61
+    21300124: sprites_cat(1)_62
+    21300126: sprites_cat(1)_63
+    21300128: sprites_cat(1)_64
+    21300130: sprites_cat(1)_65
+    21300132: sprites_cat(1)_66
+    21300134: sprites_cat(1)_67
+    21300136: sprites_cat(1)_68
+    21300138: sprites_cat(1)_69
+    21300140: sprites_cat(1)_70
+    21300142: sprites_cat(1)_71
+    21300144: sprites_cat(1)_72
+    21300146: sprites_cat(1)_73
+    21300148: sprites_cat(1)_74
+    21300150: sprites_cat(1)_75
+    21300152: sprites_cat(1)_76
+    21300154: sprites_cat(1)_77
+    21300156: sprites_cat(1)_78
+    21300158: sprites_cat(1)_79
+    21300160: sprites_cat(1)_80
+    21300162: sprites_cat(1)_81
+    21300164: sprites_cat(1)_82
+    21300166: sprites_cat(1)_83
+    21300168: sprites_cat(1)_84
+    21300170: sprites_cat(1)_85
+    21300172: sprites_cat(1)_86
+    21300174: sprites_cat(1)_87
+    21300176: sprites_cat(1)_88
+    21300178: sprites_cat(1)_89
+    21300180: sprites_cat(1)_90
+    21300182: sprites_cat(1)_91
+    21300184: sprites_cat(1)_92
+    21300186: sprites_cat(1)_93
+    21300188: sprites_cat(1)_94
+    21300190: sprites_cat(1)_95
+    21300192: sprites_cat(1)_96
+    21300194: sprites_cat(1)_97
+    21300196: sprites_cat(1)_98
+    21300198: sprites_cat(1)_99
+    21300200: sprites_cat(1)_100
+    21300202: sprites_cat(1)_101
+    21300204: sprites_cat(1)_102
+    21300206: sprites_cat(1)_103
+    21300208: sprites_cat(1)_104
+    21300210: sprites_cat(1)_105
+    21300212: sprites_cat(1)_106
+    21300214: sprites_cat(1)_107
+    21300216: sprites_cat(1)_108
+    21300218: sprites_cat(1)_109
+    21300220: sprites_cat(1)_110
+    21300222: sprites_cat(1)_111
+    21300224: sprites_cat(1)_112
+    21300226: sprites_cat(1)_113
+    21300228: sprites_cat(1)_114
+    21300230: sprites_cat(1)_115
+    21300232: sprites_cat(1)_116
+    21300234: sprites_cat(1)_117
+    21300236: sprites_cat(1)_118
+    21300238: sprites_cat(1)_119
+    21300240: sprites_cat(1)_120
+    21300242: sprites_cat(1)_121
+    21300244: sprites_cat(1)_122
+    21300246: sprites_cat(1)_123
+    21300248: sprites_cat(1)_124
+    21300250: sprites_cat(1)_125
+    21300252: sprites_cat(1)_126
+    21300254: sprites_cat(1)_127
+    21300256: sprites_cat(1)_128
+    21300258: sprites_cat(1)_129
+    21300260: sprites_cat(1)_130
+    21300262: sprites_cat(1)_131
+    21300264: sprites_cat(1)_132
+    21300266: sprites_cat(1)_133
+    21300268: sprites_cat(1)_134
+    21300270: sprites_cat(1)_135
+    21300272: sprites_cat(1)_136
+    21300274: sprites_cat(1)_137
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: sprites_cat(1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4457.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_1
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 4457.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_2
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 4457.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_3
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 4457.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_4
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 4457.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_5
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 4457.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_6
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 4457.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_7
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 4457.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_8
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 4457.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_9
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 4457.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_10
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 4457.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_11
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 4457.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_12
+      rect:
+        serializedVersion: 2
+        x: 3708
+        y: 4457.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4115.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_14
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 4115.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_15
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 4115.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_16
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 4115.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_17
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 4115.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_18
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 4115.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_19
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 4115.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_20
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 4115.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_21
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 4115.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_22
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 4115.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_23
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 4115.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_24
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 4115.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_25
+      rect:
+        serializedVersion: 2
+        x: 3708
+        y: 4115.14307
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3773.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_27
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 3773.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_28
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 3773.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_29
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 3773.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_30
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 3773.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_31
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 3773.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_32
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 3773.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_33
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 3773.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_34
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 3773.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_35
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 3773.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_36
+      rect:
+        serializedVersion: 2
+        x: 3708
+        y: 3773.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3431.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_38
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 3431.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_39
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 3431.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_40
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 3431.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_41
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 3431.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_42
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 3431.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_43
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 3431.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_44
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 3431.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_45
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 3431.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_46
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 3431.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_47
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 3431.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_48
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 3431.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_49
+      rect:
+        serializedVersion: 2
+        x: 3708
+        y: 3431.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3089.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_51
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 3089.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_52
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 3089.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_53
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 3089.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_54
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 3089.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_55
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 3089.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_56
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 3089.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_57
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 3089.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_58
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 3089.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_59
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 3089.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_60
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 3089.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_61
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 3089.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_62
+      rect:
+        serializedVersion: 2
+        x: 3708
+        y: 3089.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2747.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_64
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 2747.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_65
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 2747.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_66
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 2747.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_67
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 2747.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_68
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 2747.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_69
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 2747.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_70
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 2747.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_71
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 2747.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_72
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 2747.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_73
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 2747.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_74
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 2747.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_75
+      rect:
+        serializedVersion: 2
+        x: 3708
+        y: 2747.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2405.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_77
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 2405.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_78
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 2405.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_79
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 2405.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_80
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 2405.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_81
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 2405.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_82
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 2405.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_83
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 2405.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_84
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 2405.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_85
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 2405.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_86
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 2405.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_87
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 2405.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2063.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_89
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 2063.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_90
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 2063.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_91
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 2063.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_92
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 2063.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_93
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 2063.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_94
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 2063.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_95
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 2063.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_96
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 2063.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_97
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 2063.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_98
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 2063.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_99
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 2063.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1721.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_101
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1721.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_102
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1721.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_103
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 1721.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_104
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1721.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_105
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 1721.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_106
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 1721.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_107
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 1721.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_108
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 1721.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_109
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 1721.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_110
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 1721.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_111
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 1721.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1379.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_113
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1379.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_114
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1379.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_115
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 1379.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_116
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1379.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_117
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 1379.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_118
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 1379.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_119
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 1379.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_120
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 1379.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_121
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 1379.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_122
+      rect:
+        serializedVersion: 2
+        x: 3708
+        y: 1379.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_123
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1037.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_124
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1037.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_125
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1037.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_126
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 1037.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_127
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 1037.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_128
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 1037.14282
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_129
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 695.142822
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_130
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 695.142822
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_131
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 695.142822
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_132
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 695.142822
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 353.142853
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_134
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 353.142853
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_135
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 353.142853
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_136
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11.1428528
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprites_cat(1)_137
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 11.1428528
+        width: 309.461548
+        height: 342.857147
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
