@@ -33,7 +33,7 @@ public class select : MonoBehaviour
             {
                 if (editMode) {
                     if (!selected) {
-                        Select();
+                        Select(theObject);
                     } else if (selected) {
                         deSelect();
                     }
@@ -42,12 +42,17 @@ public class select : MonoBehaviour
         }
     }
 
-    public void Select()
+    public void Select(GameObject theObject)
     {
         selectSetter.Target = theObject;
         selected = true;
 
         selectTile.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+    }
+
+    public void Drag(GameObject theObject)
+    {
+        editMouse.MoveObject = theObject;
     }
 
     public void Drag()

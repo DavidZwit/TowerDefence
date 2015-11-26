@@ -15,6 +15,8 @@ public class UnitBase : Humanoid {
         if (!isFriendly) fallBackSpot = GameObject.Find("Base").transform.position;
         rb = GetComponent<Rigidbody2D>();
         SetRotationPos(fallBackSpot, "lookPos");
+
+        health = 50; maxTargets = 2; atackDamage = 5; atackSpeed = 2;
     }
 
     protected void WalkToTargets()

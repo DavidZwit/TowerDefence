@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class EventHandeler : MonoBehaviour {
 
     private GameObject begin, buildTime, inWave, tryAgain;
     private GameObject enemies, pauseMenu, p1, p2;
+
+    [SerializeField]
+    private List<GameObject> enemiesUpgrade = new List<GameObject>();
 
     public delegate void Action();
     public delegate void Stop();
@@ -93,6 +97,15 @@ public class EventHandeler : MonoBehaviour {
         timer = timeInWave;
         p1.SetActive(false);
         p2.SetActive(true);
+
+        foreach (GameObject obj in enemiesUpgrade)
+        {
+            UnitBase enemyScript = obj.GetComponent<UnitBase>();
+            enemyScript.HealthUpgrade++;
+            enemyScript.AttackSpeedUpgrade++;
+            enemyScript.MaxTargetsUpgrade++;
+        }
+
 
         if (StartBattle != null)
             StartBattle();

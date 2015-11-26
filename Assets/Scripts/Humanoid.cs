@@ -45,8 +45,8 @@ public class Humanoid : MonoBehaviour {
                 for (var i = checkLength - 1; i >= 0; i-- )
                 {
                     //Setting animation variables
-                    renderer.color = new Color(1f, 0f, 1f);
-                    Invoke("resetColor", 0.01f);
+                    //renderer.color = new Color(1f, 0f, 1f);
+                    //Invoke("resetColor", 0.01f);
                     attacking = true;  SetRotationPos(targets[i].transform.position, "attackPos");
 
                     if (projectile != null) { //if it is an turret
@@ -72,7 +72,7 @@ public class Humanoid : MonoBehaviour {
     protected GameObject[] CheckTargets(int range)
     {
         //Grabbing all the targets and puting them in an array
-        renderer.color = new Color(0f, 1f, 1f); Invoke("resetColor", 0.2f);
+       // renderer.color = new Color(0f, 1f, 1f); Invoke("resetColor", 0.2f);
         List<GameObject> targets = new List<GameObject>();
         foreach (Collider2D coll in Physics2D.OverlapCircleAll(transform.position, range)){
             if (coll.gameObject.tag == targetTag){
@@ -116,15 +116,15 @@ public class Humanoid : MonoBehaviour {
         set
         {
             attackspeedUpgradeCount++;
-            if (atackSpeed > 0) atackSpeed -= (attackSpeedUpgrade * value); }
+            if (atackSpeed > 0) atackSpeed -= (attackSpeedUpgrade * 1); }
     }
 
     public virtual int AttackRangeUpgrade
     {
         get { return atackRange; }
         set
-        {   attackRangeUpgradeCount++;
-            atackRange += (AttackRangeUpgrade * value); }
+        {   attackRangeUpgradeCount+=1;
+            atackRange += (AttackRangeUpgrade * 1); }
     }
 
     public virtual int HealthUpgrade
@@ -132,8 +132,8 @@ public class Humanoid : MonoBehaviour {
         get { return Health; }
         set
         {
-            healthUpgradeCount++;
-            health += (healthUpgrade * value); }
+            healthUpgradeCount+=1;
+            health += (healthUpgrade * 1); }
     }
 
     public virtual int MaxTargetsUpgrade
@@ -141,11 +141,36 @@ public class Humanoid : MonoBehaviour {
         get { return maxTargets; }
         set
         {
-            maxTargets++; 
-            maxTargets -= (targetsUpgrade * value); }
+            targetUpgradeCount+=1; 
+            maxTargets += (targetsUpgrade * 1); }
     }
-    //end upgrade get and setters
 
+    //Getters and setters for getting the upgraded amound
+    public int TargetUpgradeCount
+    {
+        get { return targetUpgradeCount;}
+        set { targetUpgradeCount = value; }
+    }
+
+    public int AttackRangeUpgradeCount
+    {
+        get { return attackRangeUpgradeCount; }
+        set { attackRangeUpgradeCount = value; }
+    }
+
+    public int HealthUpgradeCount
+    {
+        get { return healthUpgradeCount; }
+        set { healthUpgradeCount = value; }
+    }
+
+    public int AttackspeedUpgradeCount
+    {
+        get { return attackspeedUpgradeCount; }
+        set { attackspeedUpgradeCount = value; }
+    }
+    
+    //Damage handeling
     protected virtual void ApplyDamage(int damage)
     {
         health -= damage;

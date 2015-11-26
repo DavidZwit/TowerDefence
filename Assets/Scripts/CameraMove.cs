@@ -53,7 +53,7 @@ public class CameraMove : MonoBehaviour {
         mouseDelta.y = Input.GetAxis("Mouse Y") * 4;
         velocity.z -= Input.mouseScrollDelta.y * 4;
 
-        if (Input.GetMouseButton(0) && (mouseDelta.sqrMagnitude > 0 || dragging))
+        if (Input.GetMouseButton(0) && (mouseDelta.sqrMagnitude > 10 || dragging))
         {
             dragging = true;
             velocity -= mouseDelta;

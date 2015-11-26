@@ -13,6 +13,7 @@ public class CreateObject : MonoBehaviour
     private Resources resources;
     private Selected selected;
     private GridDrag gridDrag;
+    private select Select;
 
     void Awake()
     {   
@@ -20,6 +21,7 @@ public class CreateObject : MonoBehaviour
         resources = GameObject.Find("Handeler").GetComponent<Resources>();
         selected = GameObject.Find("Handeler").GetComponent<Selected>();
         gridDrag = GameObject.Find("Handeler").GetComponent<GridDrag>();
+        Select = GameObject.Find("Handeler").GetComponent<select>();
     }
 
     void FixedUpdate()
@@ -43,7 +45,8 @@ public class CreateObject : MonoBehaviour
                 GameObject player = Instantiate(objectList[i], Vector3.zero, Quaternion.identity) as GameObject;
                 player.transform.parent = parrent.transform;
                 selected.Target = player;
-                gridDrag.MoveObject = player;
+                Select.Select(player);
+                Select.Drag(player);
             }
         }
     }
