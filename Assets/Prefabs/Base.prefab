@@ -89,10 +89,10 @@ GameObject:
   - 4: {fileID: 464310}
   - 212: {fileID: 21210382}
   - 61: {fileID: 6163062}
-  - 114: {fileID: 11451802}
   - 114: {fileID: 11445586}
   - 114: {fileID: 11452800}
   - 114: {fileID: 11444984}
+  - 95: {fileID: 9519912}
   m_Layer: 0
   m_Name: Base
   m_TagString: Friendly
@@ -505,6 +505,23 @@ BoxCollider2D:
   m_Offset: {x: 21.6307068, y: 5.01643372}
   serializedVersion: 2
   m_Size: {x: 344.078552, y: 431.116119}
+--- !u!95 &9519912
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137746}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 91c7ed58ab5f1a54d944c5669633ad65, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!102 &10231274
 TextMesh:
   serializedVersion: 3
@@ -550,6 +567,7 @@ MonoBehaviour:
   healthUpgrade: 500
   healthBar: {fileID: 0}
   healthBarText: {fileID: 0}
+  dieAnim: {fileID: 7400000, guid: 79efb8e6806ba1a4c8064a45a8f05914, type: 2}
 --- !u!114 &11445586
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -559,17 +577,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f23ffa7502b91644ea02eea6fe6d3964, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11451802
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd45f5c46ad1fa4880b62a3e81dbc30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11452800
@@ -693,7 +700,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e63c19b961eb90a4492471b3ca5bf855, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ccaefafe1fe45c843b20ad380ab0ad98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21232886
 SpriteRenderer:
@@ -749,7 +756,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f849d73140f4cbc408b1eee40eec0404, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0c8812492c923b942a0dba40f92ce20f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21251268
 SpriteRenderer:
@@ -777,7 +784,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2408e26525b591e4d94db0eed889610d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f5ac3fe4522726d4388f6b6040ca0e35, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21266760
 SpriteRenderer:
@@ -958,6 +965,10 @@ Prefab:
       propertyPath: atackSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dieAnim
+      value: 
+      objectReference: {fileID: 7400000, guid: 79efb8e6806ba1a4c8064a45a8f05914, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 137746}

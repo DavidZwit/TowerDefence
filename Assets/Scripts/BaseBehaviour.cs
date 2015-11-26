@@ -20,10 +20,10 @@ public class BaseBehaviour : TurretBase {
         base.Awake();
     }
 
-    protected override void ApplyDamage(int damage)
+    private void EndGame()
     {
-        health -= damage;
-        if (health < 0) GameObject.Find("Handeler").GetComponent<EventHandeler>().EndGame();
+        EventHandeler.pause = true;
+        GameObject.Find("Handeler").GetComponent<EventHandeler>().EndGame();
     }
 
     public override int AttackRangeUpgrade

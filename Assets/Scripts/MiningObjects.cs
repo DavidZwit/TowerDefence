@@ -15,8 +15,13 @@ public class MiningObjects : MonoBehaviour {
         if (Time.time % 1 == 0)
         {
             health--;
-            if (health <= 0) Destroy(gameObject);
+            if (health <= 0) Die();
         }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
     }
 
     void OnMouseDown()

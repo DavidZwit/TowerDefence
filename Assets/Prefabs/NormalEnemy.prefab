@@ -77,10 +77,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9333380b142a266499b03432d9179d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 140
+  health: 245
   maxTargets: 8
   atackDamage: 5
-  atackSpeed: .799999833
+  atackSpeed: -1.49011612e-07
   atackRange: 30
   damagePosOffset: {x: 0, y: 0, z: 0}
   projectile: {fileID: 0}
@@ -88,6 +88,9 @@ MonoBehaviour:
   targetsUpgrade: 1
   attackRange: 10
   healthUpgrade: 15
+  healthBar: {fileID: 0}
+  healthBarText: {fileID: 0}
+  dieAnim: {fileID: 7400000, guid: a8f625bdf8a36174ea5ecc101dfbbb88, type: 2}
   moveSpeed: 12
   lookRange: 500
   lookSpeed: .5
@@ -142,7 +145,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: dieAnim
+      value: 
+      objectReference: {fileID: 7400000, guid: a8f625bdf8a36174ea5ecc101dfbbb88, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 114284}

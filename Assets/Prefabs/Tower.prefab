@@ -266,6 +266,8 @@ MonoBehaviour:
   healthUpgrade: 0
   healthBar: {fileID: 181038}
   healthBarText: {fileID: 10208538}
+  dieAnim: {fileID: 7400000, guid: 796171bda1a19ae4f8ade081ccf65ccb, type: 2}
+  buildAnim: {fileID: 7400000, guid: 088992b3dc1ea9a459f79d982fb8ba1e, type: 2}
 --- !u!114 &11461042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -421,6 +423,14 @@ Prefab:
       propertyPath: atackRange
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dieAnim
+      value: 
+      objectReference: {fileID: 7400000, guid: 796171bda1a19ae4f8ade081ccf65ccb, type: 2}
+    - target: {fileID: 0}
+      propertyPath: buildAnim
+      value: 
+      objectReference: {fileID: 7400000, guid: 3059b99508e1cec4ea03b8a996fd50f9, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 152002}

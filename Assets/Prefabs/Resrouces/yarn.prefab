@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21243194}
   - 114: {fileID: 11453018}
   - 61: {fileID: 6155834}
+  - 111: {fileID: 11100244}
   m_Layer: 0
   m_Name: yarn
   m_TagString: Friendly
@@ -43,6 +44,20 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 100, y: 100}
+--- !u!111 &11100244
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165320}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &11453018
 MonoBehaviour:
   m_ObjectHideFlags: 1

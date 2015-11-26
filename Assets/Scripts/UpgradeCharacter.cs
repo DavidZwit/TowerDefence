@@ -15,6 +15,7 @@ public class UpgradeCharacter : MonoBehaviour {
         attackSpeedLevel,
         healthUpgradeLevel;
     private GameObject upgradeUI;
+    private RangeCircleScript circleReset;
     private int health, attackRange, attackSpeed, maxTargets;
 
 
@@ -35,6 +36,7 @@ public class UpgradeCharacter : MonoBehaviour {
         healthUpgradeLevel = GameObject.Find("HealthUpgradeText").GetComponent<Text>();
         
         upgradeUI = GameObject.Find("UpgradeCharacter");
+        circleReset = GameObject.Find("RangeCircles").GetComponent<RangeCircleScript>();
     }
     //Sorry for the extremely ineficiente way of doing this, but i do not have lot's of time left for this project
     void FixedUpdate()
@@ -78,7 +80,7 @@ public class UpgradeCharacter : MonoBehaviour {
         healthUpgradeLevel.text = "UpgradeHealth" + health;
 
         if (resources.Fish <= 2 || health >= 10) upgradeHealthButton.interactable = false; else upgradeHealthButton.interactable = true;
-        if (resources.Fish <= 1 || resources.Yarn <= 1 || attackSpeed <= 10) upgradeAttackSpeedButton.interactable = false; else upgradeAttackSpeedButton.interactable = true;
+        if (resources.Fish <= 1 || resources.Yarn <= 1 || attackSpeed <= 0) upgradeAttackSpeedButton.interactable = false; else upgradeAttackSpeedButton.interactable = true;
         if (resources.Yarn <= 1 || resources.Cardboard <= 1 || attackRange >= 10) upgradeRangeButton.interactable = false; else upgradeRangeButton.interactable = true;
         if (resources.Cardboard <= 1 || resources.Yarn <= 1 || maxTargets >= 10) upgradeMaxTargetsButton.interactable = false; else upgradeMaxTargetsButton.interactable = true;
         }
@@ -113,6 +115,7 @@ public class UpgradeCharacter : MonoBehaviour {
 
     public void UpgradeAttackRange()
     {
+        circleReset.checkedRange = false;
         if (resources.Yarn > 0 && resources.Cardboard > 0) {
             if (selected.Target.name.Contains("Tower")) {
                 selected.Target.gameObject.GetComponent<TurretBase>().AttackRangeUpgrade++; UpdateButtons();

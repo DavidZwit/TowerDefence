@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d0d9eec6d58153c4b8b9765f4f0e35e6
-timeCreated: 1448291303
+timeCreated: 1448578557
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -51,6 +51,7 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -70,8 +71,8 @@ TextureImporter:
         y: 1525
         width: 332
         height: 523
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .48612529, y: .1100953}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: side_shoot_1
       rect:
@@ -80,8 +81,8 @@ TextureImporter:
         y: 1525
         width: 332
         height: 523
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .48612529, y: .1100953}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: side_shoot_2
       rect:
@@ -90,8 +91,8 @@ TextureImporter:
         y: 1525
         width: 332
         height: 523
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .48612529, y: .1100953}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: side_shoot_3
       rect:
@@ -100,8 +101,8 @@ TextureImporter:
         y: 1525
         width: 332
         height: 523
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .48612529, y: .1100953}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: side_shoot_4
       rect:
@@ -110,8 +111,8 @@ TextureImporter:
         y: 1525
         width: 332
         height: 523
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .48612529, y: .1100953}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: side_shoot_5
       rect:
@@ -120,8 +121,8 @@ TextureImporter:
         y: 1525
         width: 332
         height: 523
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .48612529, y: .1100953}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: side_shoot_6
       rect:
@@ -130,8 +131,8 @@ TextureImporter:
         y: 1002
         width: 332
         height: 523
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .48612529, y: .1100953}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: side_shoot_7
       rect:
@@ -140,8 +141,8 @@ TextureImporter:
         y: 1002
         width: 332
         height: 523
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .48612529, y: .1100953}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: side_shoot_8
       rect:
@@ -150,8 +151,8 @@ TextureImporter:
         y: 1002
         width: 332
         height: 523
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .48612529, y: .1100953}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: side_shoot_9
       rect:
@@ -160,8 +161,8 @@ TextureImporter:
         y: 1002
         width: 332
         height: 523
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .48612529, y: .1100953}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: side_shoot_10
       rect:
@@ -170,8 +171,8 @@ TextureImporter:
         y: 1002
         width: 332
         height: 523
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .48612529, y: .1100953}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: side_shoot_11
       rect:
@@ -180,8 +181,8 @@ TextureImporter:
         y: 1002
         width: 332
         height: 523
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .48612529, y: .1100953}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: side_shoot_12
       rect:
@@ -190,8 +191,8 @@ TextureImporter:
         y: 479
         width: 332
         height: 523
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .48612529, y: .1100953}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: side_shoot_13
       rect:
@@ -200,8 +201,8 @@ TextureImporter:
         y: 479
         width: 332
         height: 523
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .48612529, y: .1100953}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

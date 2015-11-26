@@ -1,0 +1,430 @@
+fileFormatVersion: 2
+guid: aa5a0d05e5e4a814185c69292ec627b8
+timeCreated: 1448579452
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: building_clouds_0
+    21300002: building_clouds_1
+    21300004: building_clouds_2
+    21300006: building_clouds_3
+    21300008: building_clouds_4
+    21300010: building_clouds_5
+    21300012: building_clouds_6
+    21300014: building_clouds_7
+    21300016: building_clouds_8
+    21300018: building_clouds_9
+    21300020: building_clouds_10
+    21300022: building_clouds_11
+    21300024: building_clouds_12
+    21300026: building_clouds_13
+    21300028: building_clouds_14
+    21300030: building_clouds_15
+    21300032: building_clouds_16
+    21300034: building_clouds_17
+    21300036: building_clouds_18
+    21300038: building_clouds_19
+    21300040: building_clouds_20
+    21300042: building_clouds_21
+    21300044: building_clouds_22
+    21300046: building_clouds_23
+    21300048: building_clouds_24
+    21300050: building_clouds_25
+    21300052: building_clouds_26
+    21300054: building_clouds_27
+    21300056: building_clouds_28
+    21300058: building_clouds_29
+    21300060: building_clouds_30
+    21300062: building_clouds_31
+    21300064: building_clouds_32
+    21300066: building_clouds_33
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: building_clouds_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7492
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_1
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 7492
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_2
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 7492
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_3
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 7492
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_4
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 7492
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6792
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_6
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 6792
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_7
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 6792
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_8
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 6792
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_9
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 6792
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6092
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_11
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 6092
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_12
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 6092
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_13
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 6092
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_14
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 6092
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5392
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_16
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 5392
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_17
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 5392
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_18
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 5392
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_19
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 5392
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4692
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_21
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 4692
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_22
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 4692
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_23
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 4692
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_24
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 4692
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3992
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_26
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 3992
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_27
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 3992
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_28
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 3992
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_29
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 3992
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3292
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_31
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 3292
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_32
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 3292
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: building_clouds_33
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 3292
+        width: 725
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

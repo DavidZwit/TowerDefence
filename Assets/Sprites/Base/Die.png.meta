@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: cddbb498b6e226b4f92274fffd9f7fa5
+timeCreated: 1448576514
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Die_0
+    21300002: Die_1
+    21300004: Die_2
+    21300006: Die_3
+    21300008: Die_4
+    21300010: Die_5
+    21300012: Die_6
+    21300014: Die_7
+    21300016: Die_8
+    21300018: Die_9
+    21300020: Die_10
+    21300022: Die_11
+    21300024: Die_12
+    21300026: Die_13
+    21300028: Die_14
+    21300030: Die_15
+    21300032: Die_16
+    21300034: Die_17
+    21300036: Die_18
+    21300038: Die_19
+    21300040: Die_20
+    21300042: Die_21
+    21300044: Die_22
+    21300046: Die_23
+    21300048: Die_24
+    21300050: Die_25
+    21300052: Die_26
+    21300054: Die_27
+    21300056: Die_28
+    21300058: Die_29
+    21300060: Die_30
+    21300062: Die_31
+    21300064: Die_32
+    21300066: Die_33
+    21300068: Die_34
+    21300070: Die_35
+    21300072: Die_36
+    21300074: Die_37
+    21300076: Die_38
+    21300078: Die_39
+    21300080: Die_40
+    21300082: Die_41
+    21300084: Die_42
+    21300086: Die_43
+    21300088: Die_44
+    21300090: Die_45
+    21300092: Die_46
+    21300094: Die_47
+    21300096: Die_48
+    21300098: Die_49
+    21300100: Die_50
+    21300102: Die_51
+    21300104: Die_52
+    21300106: Die_53
+    21300108: Die_54
+    21300110: Die_55
+    21300112: Die_56
+    21300114: Die_57
+    21300116: Die_58
+    21300118: Die_59
+    21300120: Die_60
+    21300122: Die_61
+    21300124: Die_62
+    21300126: Die_63
+    21300128: Die_64
+    21300130: Die_65
+    21300132: Die_66
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Die_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3656
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_1
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 3656
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_2
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 3656
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_3
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 3656
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_4
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 3656
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_5
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 3656
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_6
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 3656
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_7
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 3656
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3216
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_9
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 3216
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_10
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 3216
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_11
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 3216
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_12
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 3216
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_13
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 3216
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_14
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 3216
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_15
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 3216
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2776
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_17
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 2776
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_18
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 2776
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_19
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 2776
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_20
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 2776
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_21
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 2776
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_22
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 2776
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_23
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 2776
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2336
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_25
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 2336
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_26
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 2336
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_27
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 2336
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_28
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 2336
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_29
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 2336
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_30
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 2336
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_31
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 2336
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1896
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_33
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1896
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_34
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1896
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_35
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1896
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_36
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 1896
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_37
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 1896
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_38
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1896
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_39
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 1896
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1456
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_41
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1456
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_42
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1456
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_43
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1456
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_44
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 1456
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_45
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 1456
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_46
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1456
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_47
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 1456
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1016
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_49
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1016
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_50
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1016
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_51
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1016
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_52
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 1016
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_53
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 1016
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_54
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1016
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_55
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 1016
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_57
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 576
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_58
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 576
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_59
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 576
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_60
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 576
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_61
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 576
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_62
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 576
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_63
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 576
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_65
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 136
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Die_66
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 136
+        width: 485
+        height: 440
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

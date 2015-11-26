@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8a58a4dd0196eb34a9a08ba69c64b4d9
-timeCreated: 1448394136
+timeCreated: 1448578891
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -71,6 +71,7 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -90,8 +91,8 @@ TextureImporter:
         y: 1634
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Turret_idle_side_1
       rect:
@@ -100,8 +101,8 @@ TextureImporter:
         y: 1634
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Turret_idle_side_2
       rect:
@@ -110,8 +111,8 @@ TextureImporter:
         y: 1634
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Turret_idle_side_3
       rect:
@@ -120,8 +121,8 @@ TextureImporter:
         y: 1634
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Turret_idle_side_4
       rect:
@@ -130,8 +131,8 @@ TextureImporter:
         y: 1634
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Turret_idle_side_5
       rect:
@@ -140,8 +141,8 @@ TextureImporter:
         y: 1634
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Turret_idle_side_6
       rect:
@@ -150,8 +151,8 @@ TextureImporter:
         y: 1220
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Turret_idle_side_7
       rect:
@@ -160,8 +161,8 @@ TextureImporter:
         y: 1220
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Turret_idle_side_8
       rect:
@@ -170,8 +171,8 @@ TextureImporter:
         y: 1220
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Turret_idle_side_9
       rect:
@@ -180,8 +181,8 @@ TextureImporter:
         y: 1220
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Turret_idle_side_10
       rect:
@@ -190,8 +191,8 @@ TextureImporter:
         y: 1220
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Turret_idle_side_11
       rect:
@@ -200,8 +201,8 @@ TextureImporter:
         y: 1220
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Turret_idle_side_12
       rect:
@@ -210,8 +211,8 @@ TextureImporter:
         y: 806
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Turret_idle_side_13
       rect:
@@ -220,8 +221,8 @@ TextureImporter:
         y: 806
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Turret_idle_side_14
       rect:
@@ -230,8 +231,8 @@ TextureImporter:
         y: 806
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Turret_idle_side_15
       rect:
@@ -240,8 +241,8 @@ TextureImporter:
         y: 806
         width: 293
         height: 414
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .358506799, y: .0166897308}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

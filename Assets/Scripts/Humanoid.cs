@@ -16,6 +16,7 @@ public class Humanoid : MonoBehaviour
     [SerializeField] private int targetsUpgrade, attackRange, healthUpgrade;//How fast these things upgrade
     [SerializeField] private GameObject healthBar;//The Healthbar GUI
     [SerializeField] private TextMesh healthBarText;//The Healthbar TEXT
+    [SerializeField] protected AnimationClip dieAnim, buildAnim;
     protected int healthbarSize;//The max health of the object
     private int targetUpgradeCount, attackRangeUpgradeCount, healthUpgradeCount, attackspeedUpgradeCount;
     protected int power;//The power, is to determen how strong the object is for sorting
@@ -32,7 +33,8 @@ public class Humanoid : MonoBehaviour
         if (healthBar) healthbarSize = (int)healthBar.transform.localScale.x;
         if (gameObject.tag == "Enemy") { isFriendly = false; targetTag = "Friendly"; inBattle = true; }
         else if (gameObject.tag == "Friendly"){ isFriendly = true; targetTag = "Enemy";}
-        if (GetComponent<Animator>() != null) { animator = GetComponent<Animator>();}// animator.SetInteger("attackPos", 3); }
+        if (GetComponent<Animator>() != null) { animator = GetComponent<Animator>(); }
+        if (buildAnim != null) animator.Play(buildAnim.name);
 
         updateHealthBar();
     }
@@ -52,7 +54,6 @@ public class Humanoid : MonoBehaviour
                 for (var i = checkLength - 1; i >= 0; i-- )
                 {
                     //Setting animation variables
-                    Invoke("resetColor", 0.01f);
                     attacking = true;  SetRotationPos(targets[i].transform.position, "attackPos");
 
                     if (projectile != null) { //if it is an turret
@@ -187,11 +188,11 @@ public class Humanoid : MonoBehaviour
     }
 
     //Dealling damage and adding health
-    protected virtual void ApplyDamage(int damage)
+    protected void ApplyDamage(int damage)
     {
         health -= damage;
         updateHealthBar();
-        if (health <= 0) Destroy(gameObject);
+        if (health <= 0) Die();
     }
 
     public int Health
@@ -199,14 +200,19 @@ public class Humanoid : MonoBehaviour
         get { return health; }
         set
         {
-            health = value; if (health <= 0) Destroy(gameObject);
+            health = value; if (health <= 0) Die();
             updateHealthBar();
         }
     }
 
     protected void Die()
     {
-        
+        if (GetComponent<Animation>())
+        {
+            animator.Play(dieAnim.name);
+            Destroy(gameObject, dieAnim.length);
+        }
+        else Destroy(gameObject);
     }
     //Stuff to controll the events, don't really worry about it.
 

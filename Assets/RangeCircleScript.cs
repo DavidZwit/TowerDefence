@@ -3,31 +3,32 @@ using System.Collections;
 
 public class RangeCircleScript : MonoBehaviour {
     float size = 200;
-    bool checkedRange, turnedOf;
+    public bool checkedRange, turnedOf;
     Selected selected;
-    GameObject lookRange;
+    GameObject lookRange, attackRange;
 
     void Awake()
     {
         selected = GameObject.Find("Handeler").GetComponent<Selected>();
         lookRange = GameObject.Find("LookRangeCircle");
+        attackRange = GameObject.Find("RangeCircle");
     }
 
     private void Update()
     {
         if (selected.Target)
         {
-            transform.position = selected.Target.transform.position;
-            lookRange.transform.position = transform.position;
+            attackRange.transform.position = selected.Target.transform.position;
+            lookRange.transform.position = selected.Target.transform.position;
+            attackRange.transform.Rotate(Vector3.forward);
             lookRange.transform.Rotate(Vector3.forward);
-            transform.Rotate(Vector3.forward);
             turnedOf = false;
 
             if (!checkedRange)
             {
-                float shootRange = GetShootRange();
+                float shootRangeNumber = GetShootRange();
                 float lookRangeNumber = GetLookRange();
-                transform.localScale = new Vector3(shootRange / size, shootRange / size, 0);
+                attackRange.transform.localScale = new Vector3(shootRangeNumber / size, shootRangeNumber / size, 0);
                 lookRange.transform.localScale = new Vector3(lookRangeNumber / size, lookRangeNumber / size, 0);
                 checkedRange = true;
             }
@@ -36,7 +37,7 @@ public class RangeCircleScript : MonoBehaviour {
             if (!turnedOf) {
                 turnedOf = true;
                 lookRange.transform.localScale = Vector3.zero;
-                transform.localScale = Vector3.zero;
+                attackRange.transform.localScale = Vector3.zero;
                 checkedRange = false;
             }
         }
@@ -56,6 +57,6 @@ public class RangeCircleScript : MonoBehaviour {
     {
         if (selected.Target.name.Contains("Cat")) {
             return selected.Target.GetComponent<UnitBase>().lookRange;
-        } else return 0;
+        } else return 0f;
     }
 }

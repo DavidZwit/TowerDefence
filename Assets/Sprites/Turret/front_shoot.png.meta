@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: eb576f3fa4b68004a8c18a3d13ea95aa
-timeCreated: 1447942062
+timeCreated: 1448578836
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -63,6 +63,7 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -78,262 +79,252 @@ TextureImporter:
     - name: front_shoot_0
       rect:
         serializedVersion: 2
-        x: 24
+        x: 0
         y: 1624
-        width: 172
-        height: 417
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_1
       rect:
         serializedVersion: 2
-        x: 255
+        x: 237
         y: 1624
-        width: 186
-        height: 413
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_2
       rect:
         serializedVersion: 2
-        x: 487
+        x: 474
         y: 1624
-        width: 201
-        height: 409
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_3
       rect:
         serializedVersion: 2
-        x: 719
+        x: 711
         y: 1624
-        width: 213
-        height: 404
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_4
       rect:
         serializedVersion: 2
-        x: 951
+        x: 948
         y: 1624
-        width: 222
-        height: 401
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_5
       rect:
         serializedVersion: 2
-        x: 1199
+        x: 1185
         y: 1624
-        width: 202
-        height: 402
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_6
       rect:
         serializedVersion: 2
-        x: 1443
+        x: 1422
         y: 1624
-        width: 181
-        height: 406
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_7
       rect:
         serializedVersion: 2
-        x: 1684
-        y: 1770
-        width: 8
-        height: 4
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        x: 1659
+        y: 1624
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_8
       rect:
         serializedVersion: 2
-        x: 1688
-        y: 1624
-        width: 154
-        height: 408
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 1200
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_9
       rect:
         serializedVersion: 2
-        x: 28
+        x: 237
         y: 1200
-        width: 160
-        height: 411
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_10
       rect:
         serializedVersion: 2
-        x: 264
-        y: 1202
-        width: 165
-        height: 412
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        x: 474
+        y: 1200
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_11
       rect:
         serializedVersion: 2
-        x: 496
+        x: 711
         y: 1200
-        width: 173
-        height: 418
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_12
       rect:
         serializedVersion: 2
-        x: 732
+        x: 948
         y: 1200
-        width: 175
-        height: 419
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_13
       rect:
         serializedVersion: 2
-        x: 968
+        x: 1185
         y: 1200
-        width: 177
-        height: 420
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_14
       rect:
         serializedVersion: 2
-        x: 1204
-        y: 1202
-        width: 180
-        height: 419
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        x: 1422
+        y: 1200
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_15
       rect:
         serializedVersion: 2
-        x: 1443
+        x: 1659
         y: 1200
-        width: 177
-        height: 420
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_16
       rect:
         serializedVersion: 2
-        x: 1680
-        y: 1200
-        width: 176
-        height: 419
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 776
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_17
       rect:
         serializedVersion: 2
-        x: 24
-        y: 779
-        width: 172
-        height: 416
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        x: 237
+        y: 776
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_18
       rect:
         serializedVersion: 2
-        x: 260
-        y: 779
-        width: 172
-        height: 416
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        x: 474
+        y: 776
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_19
       rect:
         serializedVersion: 2
-        x: 498
-        y: 779
-        width: 171
-        height: 416
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        x: 711
+        y: 776
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_20
       rect:
         serializedVersion: 2
-        x: 735
-        y: 779
-        width: 171
-        height: 416
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 948
+        y: 776
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_21
       rect:
         serializedVersion: 2
-        x: 972
-        y: 779
-        width: 172
-        height: 416
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        x: 1185
+        y: 776
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_22
       rect:
         serializedVersion: 2
-        x: 1208
-        y: 779
-        width: 172
-        height: 416
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        x: 1422
+        y: 776
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_23
       rect:
         serializedVersion: 2
-        x: 1446
-        y: 779
-        width: 171
-        height: 416
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        x: 1659
+        y: 776
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: front_shoot_24
       rect:
         serializedVersion: 2
-        x: 1683
-        y: 779
-        width: 173
-        height: 416
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: front_shoot_25
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 356
-        width: 172
-        height: 416
-      alignment: 7
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 352
+        width: 237
+        height: 424
+      alignment: 9
+      pivot: {x: .410030693, y: .0318413489}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
