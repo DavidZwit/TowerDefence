@@ -26,7 +26,6 @@ GameObject:
   - 4: {fileID: 454466}
   - 212: {fileID: 21226632}
   - 114: {fileID: 11457852}
-<<<<<<< HEAD
   - 95: {fileID: 9508200}
   m_Layer: 0
   m_Name: Box
@@ -48,12 +47,6 @@ GameObject:
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
-=======
-  - 61: {fileID: 6123838}
-  m_Layer: 0
-  m_Name: Box
-  m_TagString: Friendly
->>>>>>> refs/remotes/origin/master
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +92,6 @@ Transform:
   - {fileID: 487584}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-<<<<<<< HEAD
 --- !u!4 &459754
 Transform:
   m_ObjectHideFlags: 1
@@ -153,16 +145,11 @@ MeshRenderer:
 --- !u!95 &9508200
 Animator:
   serializedVersion: 3
-=======
---- !u!61 &6123838
-BoxCollider2D:
->>>>>>> refs/remotes/origin/master
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135962}
   m_Enabled: 1
-<<<<<<< HEAD
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 678c79ebafa5c3445a8aeb30cedc5c49, type: 2}
   m_CullingMode: 0
@@ -193,14 +180,6 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
-=======
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 400, y: 400}
->>>>>>> refs/remotes/origin/master
 --- !u!114 &11457852
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -243,9 +222,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -311,11 +288,7 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: m_TagString
-      value: Friendly
-      objectReference: {fileID: 0}
+    m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 135962}

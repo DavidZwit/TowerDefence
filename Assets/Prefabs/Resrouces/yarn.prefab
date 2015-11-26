@@ -13,7 +13,7 @@ GameObject:
   - 61: {fileID: 6155834}
   m_Layer: 0
   m_Name: yarn
-  m_TagString: Friendly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,15 +73,13 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 909220a9ccf05b547aaa1b030a180480, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 28a48dcf44a0dd64aabb0dadfabbf4d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
@@ -105,15 +103,6 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 909220a9ccf05b547aaa1b030a180480,
-        type: 3}
-    - target: {fileID: 0}
-      propertyPath: m_TagString
-      value: Friendly
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

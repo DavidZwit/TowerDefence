@@ -16,7 +16,7 @@ public class TurretBase : Humanoid {
     
     void FixedUpdate()
     {
-        if (inBattle && !EventHandeler.pause) Atack();
+        if (inBattle) Atack();
     }
 
     protected override void StartBattle()

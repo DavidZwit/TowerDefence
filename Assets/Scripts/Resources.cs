@@ -12,16 +12,9 @@ public class Resources : MonoBehaviour {
 
     void Awake()
     {
-        fishText = GameObject.Find("Fish_Button_Text").GetComponent<Text>();
-        yarnText = GameObject.Find("Yarn_Ball_Text").GetComponent<Text>();
-        cardboardText = GameObject.Find("Cardboard_Button_Text").GetComponent<Text>();
-    }
-
-    void Start()
-    {
-        fishText.text = "" + fish;
-        yarnText.text = "" + yarn;
-        cardboardText.text = "" + cardboard;
+        fishText = GameObject.Find("FishScore").GetComponent<Text>();
+        yarnText = GameObject.Find("YarnScore").GetComponent<Text>();
+        cardboardText = GameObject.Find("CardboardScore").GetComponent<Text>();
     }
 
     public void EditResources(string objectName)
@@ -35,27 +28,24 @@ public class Resources : MonoBehaviour {
     {
         get { return fish; }
         set {
-            fish = value;
-            fishText.text = "" + fish;
-        }
+            fishText.text = "Fish: " + fish;
+            fish = value; }
     }
 
     public float Yarn
     {
         get { return yarn; }
         set {
-            yarn = value;
-            yarnText.text = "" + yarn;
-        }
+            yarnText.text = "Yarn: " + yarn;
+            yarn = value; }
     }
 
     public float Cardboard
     {
         get { return cardboard; }
         set {
-            cardboard = value;
-            cardboardText.text = "" + cardboard;
-        }
+            cardboardText.text = "Cardboard: " + cardboard;
+            cardboard = value; }
     }
     public int MineStrength
     {

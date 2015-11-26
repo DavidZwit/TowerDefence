@@ -24,7 +24,7 @@ public class UnitBase : Humanoid {
             targets = CheckTargets(lookRange);
             nextLook = Time.time + lookSpeed;
         }
-        if (targets != null && targets.Length > 0) {
+        if (targets.Length > 0 && targets[0] != null) {
             rb.transform.position = Vector2.MoveTowards(transform.position, targets[0].transform.position, moveSpeed);
             SetRotationPos(targets[0].transform.position, "lookPos");
         } else {
@@ -35,7 +35,7 @@ public class UnitBase : Humanoid {
 
     void FixedUpdate()
     {
-        if (inBattle && !EventHandeler.pause) {
+        if (inBattle) {
             Atack();
             if (!attacking) WalkToTargets();
         }
