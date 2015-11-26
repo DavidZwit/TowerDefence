@@ -127,7 +127,7 @@ public class Humanoid : MonoBehaviour
         set
         {
             attackspeedUpgradeCount++;
-            if (atackSpeed > 0) atackSpeed -= (attackSpeedUpgrade * value); }
+            if (atackSpeed > 0) atackSpeed -= (attackSpeedUpgrade); }
     }
 
     public virtual int AttackRangeUpgrade
@@ -135,7 +135,7 @@ public class Humanoid : MonoBehaviour
         get { return atackRange; }
         set
         {   attackRangeUpgradeCount++;
-            atackRange += (AttackRangeUpgrade * value); }
+            atackRange += (AttackRangeUpgrade); }
     }
 
     public virtual int HealthUpgrade
@@ -144,7 +144,7 @@ public class Humanoid : MonoBehaviour
         set
         {
             healthUpgradeCount++;
-            health += (healthUpgrade * value);
+            health += (healthUpgrade);
             if (health > maxHealth) maxHealth = health;
             updateHealthBar();
         }
@@ -156,7 +156,7 @@ public class Humanoid : MonoBehaviour
         set
         {
             maxTargets++;
-            maxTargets -= (targetsUpgrade * value);
+            maxTargets -= (targetsUpgrade);
         }
     }
 

@@ -27,8 +27,8 @@ public class RangeCircleScript : MonoBehaviour {
             {
                 float shootRange = GetShootRange();
                 float lookRangeNumber = GetLookRange();
-                lookRange.transform.localScale = new Vector3(lookRangeNumber / size, lookRangeNumber / size, 0);
                 transform.localScale = new Vector3(shootRange / size, shootRange / size, 0);
+                lookRange.transform.localScale = new Vector3(lookRangeNumber / size, lookRangeNumber / size, 0);
                 checkedRange = true;
             }
         }//make this false when size gets updated
@@ -37,8 +37,8 @@ public class RangeCircleScript : MonoBehaviour {
                 turnedOf = true;
                 lookRange.transform.localScale = Vector3.zero;
                 transform.localScale = Vector3.zero;
+                checkedRange = false;
             }
-            checkedRange = false;
         }
     }
 

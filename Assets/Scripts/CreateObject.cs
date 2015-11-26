@@ -50,10 +50,4 @@ public class CreateObject : MonoBehaviour
             }
         }
     }
-
-    public void ObjectCreateInt(int objectNumber)
-    {
-        GameObject player = Instantiate(objectList[objectNumber], Vector3.zero, Quaternion.identity) as GameObject;
-        player.transform.parent = parrent.transform;
-    }
 }
