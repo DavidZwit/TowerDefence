@@ -8,7 +8,8 @@ public class select : MonoBehaviour
     private bool inWave, selected;
     private GridDrag editMouse;
     private Selected selectSetter;
-    private GameObject selectTile;
+    private GameObject selectTile, theObject;
+    private bool nothingSelected;
 
     void Awake()
     {
@@ -17,41 +18,46 @@ public class select : MonoBehaviour
         selectTile = GameObject.Find("SelectTile");
     }
 
-    void OnMouseDown()
+    void Update()
     {
-        if (editMode)
+        if (selected) selectTile.transform.position = transform.position;
+
+        if (Input.GetMouseButtonDown(0))
         {
-            if (!selected) {
-                Select();
-            } else if (selected) {
-                deSelect();
+            nothingSelected = false;
+            try {
+                theObject = Physics2D.OverlapCircle(Camera.main.ScreenToWorldPoint(Input.mousePosition), 100).gameObject;
             }
-        } else {
-            if (!selected)
+            catch { nothingSelected = true; }
+            if (!nothingSelected && theObject.tag == "Friendly")
             {
-                selectSetter.Target = gameObject;
-                selected = true;
-            }
-            else if (selected)
-            {
-                selectSetter.Target = null;
-                selected = false;
+                if (editMode) {
+                    if (!selected) {
+                        Select();
+                    } else if (selected) {
+                        deSelect();
+                    }
+                }  
             }
         }
     }
 
-    void Update()
-    {
-        if (selected) selectTile.transform.position = transform.position;
-    }
-
     public void Select()
     {
-        selectSetter.Target = gameObject;
-        editMouse.MoveObject = gameObject;
+        selectSetter.Target = theObject;
         selected = true;
 
         selectTile.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+    }
+
+    public void Drag()
+    {
+        editMouse.MoveObject = theObject;
+    }
+
+    public void UnDrag()
+    {
+        editMouse.MoveObject = null;
     }
 
     public void deSelect()
@@ -63,9 +69,26 @@ public class select : MonoBehaviour
         selectTile.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
     }
 
-    public bool EditMode
+    void NotEditMode()
     {
-        get { return editMode; }
-        set { editMode = value; }
+        editMode = false;
     }
+
+    void EditMode()
+    {
+        editMode = true;
+    }
+
+    void OnEnable()
+    {
+        EventHandeler.StartBattle += NotEditMode;
+        EventHandeler.StopBattle += EditMode;
+    }
+
+    void OnDestroy ()
+    {
+        EventHandeler.StartBattle -= NotEditMode;
+        EventHandeler.StopBattle -= EditMode;
+    }
+
 }

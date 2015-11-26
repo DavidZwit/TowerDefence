@@ -11,7 +11,6 @@ GameObject:
   - 212: {fileID: 21295572}
   - 61: {fileID: 6111706}
   - 50: {fileID: 5054362}
-  - 114: {fileID: 11440008}
   - 114: {fileID: 11404424}
   m_Layer: 0
   m_Name: Cat
@@ -170,8 +169,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -38.1639404, y: 111.691605}
   serializedVersion: 2
+<<<<<<< HEAD
   m_Size: {x: 128, y: 128}
 --- !u!102 &10261938
 TextMesh:
@@ -194,6 +194,9 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
+=======
+  m_Size: {x: 260.86792, y: 351.376617}
+>>>>>>> refs/remotes/origin/master
 --- !u!114 &11404424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -221,6 +224,7 @@ MonoBehaviour:
   moveSpeed: 15
   lookRange: 500
   lookSpeed: .200000003
+<<<<<<< HEAD
 --- !u!114 &11440008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -284,6 +288,8 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0, g: 1, b: .296551704, a: 1}
+=======
+>>>>>>> refs/remotes/origin/master
 --- !u!212 &21295572
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -302,7 +308,9 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -369,6 +377,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsKinematic
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

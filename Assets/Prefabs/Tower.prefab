@@ -59,7 +59,6 @@ GameObject:
   - 212: {fileID: 21264060}
   - 50: {fileID: 5054044}
   - 61: {fileID: 6140094}
-  - 114: {fileID: 11461042}
   - 114: {fileID: 11460896}
   - 95: {fileID: 9540788}
   m_Layer: 0
@@ -199,9 +198,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -.000569661497, y: 208.378296}
   serializedVersion: 2
-  m_Size: {x: 128, y: 128}
+  m_Size: {x: 180.64183, y: 427.771423}
 --- !u!95 &9540788
 Animator:
   serializedVersion: 3
@@ -258,6 +257,7 @@ MonoBehaviour:
   atackRange: 500
   damagePosOffset: {x: 0, y: 0, z: 0}
   projectile: {fileID: 110330, guid: 96660a69ac4991e46b16b2b489729a2c, type: 2}
+<<<<<<< HEAD
   attackSpeedUpgrade: 0
   targetsUpgrade: 0
   attackRange: 0
@@ -301,6 +301,12 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 23a67187225d42b4786aa144e8469ff9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+=======
+  attackSpeedUpgrade: .100000001
+  targetsUpgrade: 1
+  attackRange: 100
+  healthUpgrade: 20
+>>>>>>> refs/remotes/origin/master
 --- !u!212 &21264060
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -319,7 +325,9 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -397,6 +405,22 @@ Prefab:
       propertyPath: projectile
       value: 
       objectReference: {fileID: 110330, guid: 96660a69ac4991e46b16b2b489729a2c, type: 2}
+    - target: {fileID: 0}
+      propertyPath: attackSpeedUpgrade
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: targetsUpgrade
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attackRange
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: healthUpgrade
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 152002}

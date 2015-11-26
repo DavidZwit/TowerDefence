@@ -2,8 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 
+<<<<<<< HEAD
 public class Humanoid : UpgradeCharacter
 {
+=======
+public class Humanoid : MonoBehaviour {
+>>>>>>> refs/remotes/origin/master
     [SerializeField] protected int health = 5;//The health of the object
     private int maxHealth = 0;//The health of the object
     [SerializeField] protected int maxTargets = 1;//The amound of targets that can be attacked at once
@@ -164,12 +168,12 @@ public class Humanoid : UpgradeCharacter
         get { return maxTargets; }
         set
         {
-            MaxTargetsUpgrade++; 
+            maxTargets++; 
             maxTargets -= (targetsUpgrade * value); }
     }
     //end upgrade get and setters
 
-    void ApplyDamage(int damage)
+    protected virtual void ApplyDamage(int damage)
     {
         health -= damage;
         updateHealthBar();
@@ -195,13 +199,11 @@ public class Humanoid : UpgradeCharacter
     protected virtual void StartBattle()
     {
         inBattle = true;
-        if (GetComponent<select>() == true)GetComponent<select>().EditMode = false;
     }
 
     protected virtual void StopBattle()
     {
         inBattle = false;
-        if (GetComponent<select>() == true) GetComponent<select>().EditMode = true;
     }
 
     void OnEnable()

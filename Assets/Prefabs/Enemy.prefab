@@ -157,9 +157,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 7.96365356, y: 46.4974976}
+  m_Offset: {x: -2.0960083, y: 89.1515961}
   serializedVersion: 2
-  m_Size: {x: 157, y: 123}
+  m_Size: {x: 241.501328, y: 208.308197}
 --- !u!95 &9533964
 Animator:
   serializedVersion: 3
@@ -295,7 +295,9 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}

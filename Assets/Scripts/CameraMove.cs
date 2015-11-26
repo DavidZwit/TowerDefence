@@ -41,10 +41,10 @@ public class CameraMove : MonoBehaviour {
 	// Update is called once per frame
     void FixedUpdate ()
     {
-
         maxZoomDistance = getMaxCameraSize(map.transform.localScale);
         minZoomDistance = getMaxCameraSize(new Vector2(Screen.width, Screen.height));
     }
+
 	void Update ()
     {
         mainCamera.transform.localScale = cameraSize;
@@ -60,12 +60,14 @@ public class CameraMove : MonoBehaviour {
         }
         else dragging = false;
 
-        transform.position += new Vector3(velocity.x, velocity.y, 0);
+        if (!EventHandeler.pause) {
+            transform.position += new Vector3(velocity.x, velocity.y, 0);
+            mainCamera.orthographicSize += velocity.z;
+        } else {
+            mainCamera.orthographicSize = maxZoomDistance;
+        }
 
         velocity -= velocity / 10;
-
-
-        mainCamera.orthographicSize += velocity.z;
 
         cameraSize.y = 2f * mainCamera.orthographicSize;
         cameraSize.x = cameraSize.y * mainCamera.aspect;
@@ -90,8 +92,6 @@ public class CameraMove : MonoBehaviour {
 
         if (transform.position.y + cameraSize.y / 2 > map.position.y + map.localScale.y / 2)
             transform.position = new Vector2(transform.position.x, map.position.y + map.localScale.y / 2 - cameraSize.y / 2);
-
-
-
+        }
     }
-}
+
