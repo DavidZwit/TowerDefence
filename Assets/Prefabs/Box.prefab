@@ -220,7 +220,7 @@ MonoBehaviour:
   healthUpgrade: 0
   healthBar: {fileID: 113056}
   healthBarText: {fileID: 10295730}
-  dieAnim: {fileID: 0}
+  dieAnim: {fileID: 7400000, guid: f2b3a63b65fcfe343bfa9e46d056523c, type: 2}
   buildAnim: {fileID: 7400000, guid: f2b3a63b65fcfe343bfa9e46d056523c, type: 2}
 --- !u!212 &21226632
 SpriteRenderer:

@@ -34,7 +34,7 @@ public class Humanoid : MonoBehaviour
         if (gameObject.tag == "Enemy") { isFriendly = false; targetTag = "Friendly"; inBattle = true; }
         else if (gameObject.tag == "Friendly"){ isFriendly = true; targetTag = "Enemy";}
         if (GetComponent<Animator>() != null) { animator = GetComponent<Animator>(); }
-        if (buildAnim != null) animator.Play(buildAnim.name);
+        if (buildAnim != null) animator.Play(buildAnim.name); Invoke("StartAnimations", buildAnim.length);
 
         updateHealthBar();
     }
@@ -119,6 +119,11 @@ public class Humanoid : MonoBehaviour
 
         if (healthBarText)
             healthBarText.text = health.ToString();
+    }
+
+    void StartAnimations()
+    {
+        animator.SetInteger("attackPos", 1);
     }
 
     //Upgrade get and setters

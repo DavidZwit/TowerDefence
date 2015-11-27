@@ -565,9 +565,10 @@ MonoBehaviour:
   targetsUpgrade: 500
   attackRange: 500
   healthUpgrade: 500
-  healthBar: {fileID: 0}
-  healthBarText: {fileID: 0}
+  healthBar: {fileID: 199830}
+  healthBarText: {fileID: 10231274}
   dieAnim: {fileID: 7400000, guid: 79efb8e6806ba1a4c8064a45a8f05914, type: 2}
+  buildAnim: {fileID: 7400000, guid: 3aa8587384a931648ac28825efa1080a, type: 2}
 --- !u!114 &11445586
 MonoBehaviour:
   m_ObjectHideFlags: 1
