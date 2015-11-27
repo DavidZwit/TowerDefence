@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: aa5a0d05e5e4a814185c69292ec627b8
-timeCreated: 1448579452
+timeCreated: 1448631667
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -89,7 +89,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 7492
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -97,9 +97,9 @@ TextureImporter:
     - name: building_clouds_1
       rect:
         serializedVersion: 2
-        x: 725
+        x: 714
         y: 7492
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -107,9 +107,9 @@ TextureImporter:
     - name: building_clouds_2
       rect:
         serializedVersion: 2
-        x: 1450
+        x: 1428
         y: 7492
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -117,9 +117,9 @@ TextureImporter:
     - name: building_clouds_3
       rect:
         serializedVersion: 2
-        x: 2175
+        x: 2142
         y: 7492
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -127,9 +127,9 @@ TextureImporter:
     - name: building_clouds_4
       rect:
         serializedVersion: 2
-        x: 2900
+        x: 2856
         y: 7492
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -139,7 +139,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 6792
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -147,9 +147,9 @@ TextureImporter:
     - name: building_clouds_6
       rect:
         serializedVersion: 2
-        x: 725
+        x: 714
         y: 6792
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -157,9 +157,9 @@ TextureImporter:
     - name: building_clouds_7
       rect:
         serializedVersion: 2
-        x: 1450
+        x: 1428
         y: 6792
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -167,9 +167,9 @@ TextureImporter:
     - name: building_clouds_8
       rect:
         serializedVersion: 2
-        x: 2175
+        x: 2142
         y: 6792
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -177,9 +177,9 @@ TextureImporter:
     - name: building_clouds_9
       rect:
         serializedVersion: 2
-        x: 2900
+        x: 2856
         y: 6792
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -189,7 +189,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 6092
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -197,9 +197,9 @@ TextureImporter:
     - name: building_clouds_11
       rect:
         serializedVersion: 2
-        x: 725
+        x: 714
         y: 6092
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -207,9 +207,9 @@ TextureImporter:
     - name: building_clouds_12
       rect:
         serializedVersion: 2
-        x: 1450
+        x: 1428
         y: 6092
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -217,9 +217,9 @@ TextureImporter:
     - name: building_clouds_13
       rect:
         serializedVersion: 2
-        x: 2175
+        x: 2142
         y: 6092
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -227,9 +227,9 @@ TextureImporter:
     - name: building_clouds_14
       rect:
         serializedVersion: 2
-        x: 2900
+        x: 2856
         y: 6092
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -239,7 +239,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 5392
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -247,9 +247,9 @@ TextureImporter:
     - name: building_clouds_16
       rect:
         serializedVersion: 2
-        x: 725
+        x: 714
         y: 5392
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -257,9 +257,9 @@ TextureImporter:
     - name: building_clouds_17
       rect:
         serializedVersion: 2
-        x: 1450
+        x: 1428
         y: 5392
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -267,9 +267,9 @@ TextureImporter:
     - name: building_clouds_18
       rect:
         serializedVersion: 2
-        x: 2175
+        x: 2142
         y: 5392
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -277,9 +277,9 @@ TextureImporter:
     - name: building_clouds_19
       rect:
         serializedVersion: 2
-        x: 2900
+        x: 2856
         y: 5392
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -289,7 +289,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 4692
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -297,9 +297,9 @@ TextureImporter:
     - name: building_clouds_21
       rect:
         serializedVersion: 2
-        x: 725
+        x: 714
         y: 4692
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -307,9 +307,9 @@ TextureImporter:
     - name: building_clouds_22
       rect:
         serializedVersion: 2
-        x: 1450
+        x: 1428
         y: 4692
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -317,9 +317,9 @@ TextureImporter:
     - name: building_clouds_23
       rect:
         serializedVersion: 2
-        x: 2175
+        x: 2142
         y: 4692
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -327,9 +327,9 @@ TextureImporter:
     - name: building_clouds_24
       rect:
         serializedVersion: 2
-        x: 2900
+        x: 2856
         y: 4692
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -339,7 +339,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 3992
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -347,9 +347,9 @@ TextureImporter:
     - name: building_clouds_26
       rect:
         serializedVersion: 2
-        x: 725
+        x: 714
         y: 3992
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -357,9 +357,9 @@ TextureImporter:
     - name: building_clouds_27
       rect:
         serializedVersion: 2
-        x: 1450
+        x: 1428
         y: 3992
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -367,9 +367,9 @@ TextureImporter:
     - name: building_clouds_28
       rect:
         serializedVersion: 2
-        x: 2175
+        x: 2142
         y: 3992
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -377,9 +377,9 @@ TextureImporter:
     - name: building_clouds_29
       rect:
         serializedVersion: 2
-        x: 2900
+        x: 2856
         y: 3992
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -389,7 +389,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 3292
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -397,9 +397,9 @@ TextureImporter:
     - name: building_clouds_31
       rect:
         serializedVersion: 2
-        x: 725
+        x: 714
         y: 3292
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -407,9 +407,9 @@ TextureImporter:
     - name: building_clouds_32
       rect:
         serializedVersion: 2
-        x: 1450
+        x: 1428
         y: 3292
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -417,9 +417,9 @@ TextureImporter:
     - name: building_clouds_33
       rect:
         serializedVersion: 2
-        x: 2175
+        x: 2142
         y: 3292
-        width: 725
+        width: 714
         height: 700
       alignment: 0
       pivot: {x: 0, y: 0}

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class UpgradeCharacter : MonoBehaviour {
     private Resources resources;
     private Selected selected;
-    private bool activatedButtons;
+    private bool activatedButtons, inWave;
     private Button upgradeMaxTargetsButton,
         upgradeRangeButton,
         upgradeAttackSpeedButton,
@@ -14,7 +14,7 @@ public class UpgradeCharacter : MonoBehaviour {
         attackRangeLevel,
         attackSpeedLevel,
         healthUpgradeLevel;
-    private GameObject upgradeUI;
+    private GameObject upgradeUI, takeOverButton;
     private RangeCircleScript circleReset;
     private int health, attackRange, attackSpeed, maxTargets;
 
@@ -37,17 +37,27 @@ public class UpgradeCharacter : MonoBehaviour {
         
         upgradeUI = GameObject.Find("UpgradeCharacter");
         circleReset = GameObject.Find("RangeCircles").GetComponent<RangeCircleScript>();
+
+        takeOverButton = GameObject.Find("TakeOver");
     }
     //Sorry for the extremely ineficiente way of doing this, but i do not have lot's of time left for this project
     void FixedUpdate()
     {
-        if (selected.Target == null) {
+        if (!inWave) {
+            if (selected.Target == null) {
+                upgradeUI.SetActive(false);
+                activatedButtons = false;
+            } else if (!activatedButtons) {
+                activatedButtons = true;
+                UpdateButtons();
+            }
+        } else {
             upgradeUI.SetActive(false);
             activatedButtons = false;
-        } else if (!activatedButtons) {
-            activatedButtons = true;
-            UpdateButtons();
-        }
+            if (selected.Target != null) {
+                takeOverButton.SetActive(true);
+            } else takeOverButton.SetActive(false);
+        } 
     }
 
     private void UpdateButtons()
@@ -89,6 +99,7 @@ public class UpgradeCharacter : MonoBehaviour {
     public void UpgradeHealth()
     {
         if (resources.Fish > 0) {
+            SoundManager.PlayAudio(7, 1);
             if (selected.Target.name.Contains("Tower")) {
                 selected.Target.gameObject.GetComponent<TurretBase>().HealthUpgrade++; UpdateButtons();
             } else if (selected.Target.name.Contains("Cat")) {
@@ -103,6 +114,7 @@ public class UpgradeCharacter : MonoBehaviour {
     {
         if (resources.Fish > 0 && resources.Yarn > 0)
         {
+            SoundManager.PlayAudio(7, 1);
             if (selected.Target.name.Contains("Tower")) {
                 selected.Target.gameObject.GetComponent<TurretBase>().AttackSpeedUpgrade++; UpdateButtons();
             } else if (selected.Target.name.Contains("Cat")) {
@@ -117,6 +129,7 @@ public class UpgradeCharacter : MonoBehaviour {
     {
         circleReset.checkedRange = false;
         if (resources.Yarn > 0 && resources.Cardboard > 0) {
+            SoundManager.PlayAudio(7, 1);
             if (selected.Target.name.Contains("Tower")) {
                 selected.Target.gameObject.GetComponent<TurretBase>().AttackRangeUpgrade++; UpdateButtons();
             } else if (selected.Target.name.Contains("Cat")) {
@@ -130,6 +143,7 @@ public class UpgradeCharacter : MonoBehaviour {
     public void UpgradeMaxTargets()
     {
         if (resources.Cardboard > 0 && resources.Yarn > 0) {
+            SoundManager.PlayAudio(7, 1);
             if (selected.Target.name.Contains("Tower")) {
                 selected.Target.gameObject.GetComponent<TurretBase>().MaxTargetsUpgrade++; UpdateButtons();
             } else if (selected.Target.name.Contains("Cat")) {
@@ -138,5 +152,27 @@ public class UpgradeCharacter : MonoBehaviour {
                 selected.Target.gameObject.GetComponent<BaseBehaviour>().MaxTargetsUpgrade++; UpdateButtons();
             } resources.Cardboard--; resources.Yarn--;
         }
+    }
+
+    void StartWave()
+    {
+        inWave = true;
+    }
+
+    void StopWave()
+    {
+        inWave = false;
+    }
+
+    void OnEnable()
+    {
+        EventHandeler.StartBattle += StartWave;
+        EventHandeler.StopBattle += StopWave;
+    }
+
+    void OnDestroy()
+    {
+        EventHandeler.StartBattle -= StartWave;
+        EventHandeler.StopBattle -= StopWave;
     }
 }

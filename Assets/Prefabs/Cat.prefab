@@ -77,8 +77,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106090}
   m_LocalRotation: {x: .0087265363, y: 0, z: 0, w: .999961913}
-  m_LocalPosition: {x: -4833.65918, y: -343.146606, z: -3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4833.65918, y: -301.619995, z: -2.52870011}
+  m_LocalScale: {x: .75, y: .75, z: .75}
   m_Children:
   - {fileID: 438682}
   m_Father: {fileID: 0}
@@ -173,9 +173,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -8.92838573, y: 103.318451}
   serializedVersion: 2
-  m_Size: {x: 128, y: 128}
+  m_Size: {x: 191.76889, y: 360.137848}
 --- !u!95 &9538680
 Animator:
   serializedVersion: 3
@@ -185,7 +185,7 @@ Animator:
   m_GameObject: {fileID: 106090}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b7be11e24d5351a4fb68d82a82126db4, type: 2}
+  m_Controller: {fileID: 9100000, guid: feb023882d583a54f93fc8127a96ae6c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -238,8 +238,10 @@ MonoBehaviour:
   healthUpgrade: 0
   healthBar: {fileID: 199286}
   healthBarText: {fileID: 10261938}
-  dieAnim: {fileID: 0}
+  dieAnim: {fileID: 7400000, guid: 0760076e35da4bb46bf23020375dc808, type: 2}
   buildAnim: {fileID: 7400000, guid: aef0429bd5a68a549957515212ca2e19, type: 2}
+  endGame: 0
+  takenOver: 0
   moveSpeed: 15
   lookRange: 500
   lookSpeed: .200000003

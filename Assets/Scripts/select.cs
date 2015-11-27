@@ -9,21 +9,17 @@ public class select : MonoBehaviour
     private bool selected = false;
     private GridDrag editMouse;
     private Selected selectSetter;
-    private GameObject selectTile, theObject, lastObject;
+    private GameObject theObject, lastObject;
     private bool nothingSelected;
 
     void Awake()
     {
         editMouse = GameObject.Find("Handeler").GetComponent<GridDrag>();
         selectSetter = GameObject.Find("Handeler").GetComponent<Selected>();
-        selectTile = GameObject.Find("SelectTile");
     }
 
     void Update()
     {
-        //print(eventsystem.IsPointerOverGameObject());
-        if (selected) selectTile.transform.position = transform.position;
-
         if (Input.GetMouseButtonDown(0))
         {
             nothingSelected = false;
@@ -42,7 +38,11 @@ public class select : MonoBehaviour
                     } else if (selected) {
                         deSelect();
                     }
-                }  
+                } else {
+                    if (!selected) {
+                        SelectInBattle();
+                    } else DeselectInBattle();
+                }
             }
         }
     }
@@ -51,8 +51,18 @@ public class select : MonoBehaviour
     {
         selectSetter.Target = theObject;
         selected = true;
+    }
 
-        selectTile.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+    public void SelectInBattle()
+    {
+        selected = true;
+        selectSetter.Target = theObject;
+    }
+
+    public void DeselectInBattle()
+    {
+        selectSetter.Target = null;
+        selected = false;
     }
 
     public void Drag(GameObject theObject)
@@ -75,8 +85,6 @@ public class select : MonoBehaviour
         selectSetter.Target = null;
         editMouse.MoveObject = null;
         selected = false;
-
-        selectTile.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
     }
 
     void NotEditMode()

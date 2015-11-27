@@ -25,6 +25,7 @@ public class Humanoid : MonoBehaviour
     protected Animator animator;//Gets the animator object
     protected GameObject[] targets;//The targets to atack
     protected bool attacking, moving;//Says if object is atacking
+    public bool endGame, takenOver = false;
     protected bool inBattle, isFriendly;
 
     protected void Awake()
@@ -39,7 +40,7 @@ public class Humanoid : MonoBehaviour
         updateHealthBar();
     }
 
-    protected void Atack()
+    public void Atack()
     {
         if (Time.time > nextFire) //using the fire rate
         {
@@ -55,16 +56,20 @@ public class Humanoid : MonoBehaviour
                 {
                     //Setting animation variables
                     attacking = true;  SetRotationPos(targets[i].transform.position, "attackPos");
+                    animator.SetTrigger("attacking");
 
                     if (projectile != null) { //if it is an turret
+                        animator.SetBool("Attacking", true);
+                        Invoke("StopShooting", 1);
+                        SoundManager.PlayAudio(11, 1);
                         GameObject bullet = Instantiate(projectile, transform.position + damagePosOffset, Quaternion.identity) as GameObject;
                         bullet.GetComponent<BulletBase>().Target = targets[i].transform.position;
                         bullet.transform.parent = transform;
                     } else { //if it is an ground unit that can not shoot
+                        SoundManager.PlayAudio(1, 1);
                         targets[i].SendMessage("ApplyDamage", atackDamage, SendMessageOptions.DontRequireReceiver);
                         moving = false;  animator.SetBool("walking", false);
                     }
-                    if (animator != null) animator.SetTrigger("attacking");
                 }
             } else { // if ther is nothing to attack
                 attacking = false;
@@ -74,6 +79,23 @@ public class Humanoid : MonoBehaviour
             }
             nextFire = Time.time + atackSpeed;
         }
+    }
+
+    private void StopShooting()
+    {
+        animator.SetBool("Attacking", false);
+
+    }
+
+    public void ShootToPos(Vector2 shootPos)
+    {
+        animator.SetBool("Attacking", true);
+        attacking = true; SetRotationPos(shootPos, "attackPos");
+        animator.SetTrigger("attacking");
+        GameObject bullet = Instantiate(projectile, transform.position + damagePosOffset, Quaternion.identity) as GameObject;
+        bullet.GetComponent<BulletBase>().Target = shootPos;
+        bullet.transform.SetParent(transform);
+        animator.SetBool("Attacking", false);
     }
 
     protected GameObject[] CheckTargets(int range)
@@ -212,12 +234,16 @@ public class Humanoid : MonoBehaviour
 
     protected void Die()
     {
-        if (GetComponent<Animation>())
+        if (gameObject.name == "Base") endGame = true;
+        else if (GetComponent<Animation>())
         {
+            if (gameObject.name.Contains("Enemy")) SoundManager.PlayAudio(0, 1);
+            else if (gameObject.name.Contains("Box")) SoundManager.PlayAudio(3, 1);
+            else if (gameObject.name.Contains("Cat")) SoundManager.PlayAudio(6, 1);
+            else if (gameObject.name.Contains("Tower")) SoundManager.PlayAudio(10, 1);
             animator.Play(dieAnim.name);
             Destroy(gameObject, dieAnim.length);
         }
-        else Destroy(gameObject);
     }
     //Stuff to controll the events, don't really worry about it.
 

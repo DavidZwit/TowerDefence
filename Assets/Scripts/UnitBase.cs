@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class UnitBase : Humanoid {
-    [SerializeField] protected int moveSpeed = 50;
+    [SerializeField] public int moveSpeed = 50;
     [SerializeField] public int lookRange = 500;
     [SerializeField] protected float lookSpeed = 3;
     protected float nextLook;
@@ -37,16 +37,21 @@ public class UnitBase : Humanoid {
 
     void FixedUpdate()
     {
-        if (inBattle && !EventHandeler.pause) {
-            Atack();
-            if (!attacking) WalkToTargets();
+        if (inBattle && !takenOver && !EventHandeler.pause) {
+            if (isFriendly && !takenOver) {
+                Atack();
+                if (!attacking) WalkToTargets();
+            } else {
+                Atack();
+                if (!attacking) WalkToTargets();    
+            }
         }
     }
 
     protected override void StartBattle()
     {
-            base.StartBattle();
-            fallBackSpot = transform.position;
+        base.StartBattle();
+        fallBackSpot = transform.position;
             
     }
 

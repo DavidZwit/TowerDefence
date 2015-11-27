@@ -5,6 +5,7 @@ public class BaseBehaviour : TurretBase {
     private GameObject health1, health2, health3,
         attackSpeed1, attackSpeed2, attackSpeed3,
         attackRange1, attackRange2, attackRange3;
+    private bool died;
 
     new void Awake()
     {
@@ -20,7 +21,17 @@ public class BaseBehaviour : TurretBase {
         base.Awake();
     }
 
-    private void EndGame()
+    private void Update()
+    {
+        if (endGame && !died) {
+            died = true;
+            animator.Play(dieAnim.name);
+            Invoke("EndGame", dieAnim.length);
+            Destroy(gameObject, dieAnim.length);
+        }
+    }
+
+    void EndGame()
     {
         EventHandeler.pause = true;
         GameObject.Find("Handeler").GetComponent<EventHandeler>().EndGame();

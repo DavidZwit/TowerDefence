@@ -5,15 +5,14 @@ using System.Collections.Generic;
 public class SoundManager : MonoBehaviour
 {
     public List<AudioClip> myList = new List<AudioClip>();
-    private AudioSource source;
 
-    void Awake()
+    public static void PlayAudio(int audioID, float audioVol)
     {
-        source = GetComponent<AudioSource>();
-    }
+        GameObject soundHandeler = GameObject.Find("Handeler");
 
-    public void PlayAudio(int audioID, float audioVol)
-    {
+        List<AudioClip> myList = soundHandeler.GetComponent<SoundManager>().myList;
+        AudioSource source = soundHandeler.GetComponent<AudioSource>();
+
         source.PlayOneShot(myList[audioID], audioVol);
     }
 }

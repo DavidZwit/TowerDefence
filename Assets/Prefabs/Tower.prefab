@@ -201,9 +201,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 4.28564453, y: 6.00178528}
   serializedVersion: 2
-  m_Size: {x: 128, y: 128}
+  m_Size: {x: 143.427795, y: 140.00354}
 --- !u!95 &9540788
 Animator:
   serializedVersion: 3
@@ -268,6 +268,8 @@ MonoBehaviour:
   healthBarText: {fileID: 10208538}
   dieAnim: {fileID: 7400000, guid: 796171bda1a19ae4f8ade081ccf65ccb, type: 2}
   buildAnim: {fileID: 7400000, guid: 088992b3dc1ea9a459f79d982fb8ba1e, type: 2}
+  endGame: 0
+  takenOver: 0
 --- !u!114 &11461042
 MonoBehaviour:
   m_ObjectHideFlags: 1

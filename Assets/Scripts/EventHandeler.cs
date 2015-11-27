@@ -60,6 +60,7 @@ public class EventHandeler : MonoBehaviour {
 
     public void Begin()
     {
+        pause = true;
         begin.SetActive(true);
         buildTime.SetActive(false);
         inWave.SetActive(false);
@@ -71,6 +72,7 @@ public class EventHandeler : MonoBehaviour {
 
     public void Build()
     {
+        pause = false;
         begin.SetActive(false);
         buildTime.SetActive(true);
         inWave.SetActive(false);
@@ -130,6 +132,7 @@ public class EventHandeler : MonoBehaviour {
         if (pause) {
             pauseMenu.SetActive(false);
         } else {
+            SoundManager.PlayAudio(4, 1);
             pauseMenu.SetActive(true);
         }
         pause = !pause;

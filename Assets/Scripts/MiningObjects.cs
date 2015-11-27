@@ -27,7 +27,7 @@ public class MiningObjects : MonoBehaviour {
     void OnMouseDown()
     {
         health -= 5;
-
+        SoundManager.PlayAudio(2, 1);
         if (gameObject.name.Contains("fish")) {
             resourceScript.Fish++;
         }
